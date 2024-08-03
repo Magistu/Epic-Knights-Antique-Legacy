@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "a a",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_plates"
+    },
+    "b": {
+      "tag": "c:bronze_nuggets"
+    },
+    "c": {
+      "item": "antiquelegacy:bronze_pilos"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:bronze_pilos_closet",
+    "count": 1
+  }
+}

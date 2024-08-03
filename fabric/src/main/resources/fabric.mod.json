@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "antiquelegacy",
+  "version": "1.8",
+  "name": "Epic Knights: Antique Legacy",
+  "description": "Adds antique stuff to the game",
+  "authors": [
+    "minucius", "Magistu"
+  ],
+  "contributors": [
+    "Borki", "StaxiHD", "Plaguedoctor", "Superamogus", "Santusio"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/epic-knights-antique-legacy",
+    "sources": "https://github.com/Magistu/Epic-Knights-Antique-Legacy",
+    "discord": "https://discord.gg/H9CVcXEmYe"
+  },
+  "license": "MIT",
+  "icon": "assets/antiquelegacy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.magistuarmory.antiquelegacy.fabric.EpicKnightsAntiqueLegacyFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.0",
+    "magistuarmory": ">=8.3"
+  }
+}

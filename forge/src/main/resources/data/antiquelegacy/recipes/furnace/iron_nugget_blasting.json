@@ -1,0 +1,131 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": [
+        {
+            "item": "antiquelegacy:iron_antique_dagger"
+        },
+        {
+            "item": "antiquelegacy:iron_sica"
+        },
+        {
+            "item": "antiquelegacy:iron_rhomphaia"
+        },
+        {
+            "item": "antiquelegacy:iron_antique_spear"
+        },
+        {
+            "item": "antiquelegacy:iron_doru"
+        },
+        {
+            "item": "antiquelegacy:iron_retiarius"
+        },
+        {
+            "item": "antiquelegacy:iron_sarissa"
+        },
+        {
+            "item": "antiquelegacy:iron_triarii_spear"
+        },
+        {
+            "item": "antiquelegacy:iron_antique_sword"
+        },
+        {
+            "item": "antiquelegacy:iron_celtic_sword"
+        },
+        {
+            "item": "antiquelegacy:iron_early_spatha"
+        },
+        {
+            "item": "antiquelegacy:iron_gladiator_sword"
+        },
+        {
+            "item": "antiquelegacy:iron_gladius"
+        },
+        {
+            "item": "antiquelegacy:iron_kopis"
+        },
+        {
+            "item": "antiquelegacy:iron_republic_gladius"
+        },
+        {
+            "item": "antiquelegacy:iron_single_edged_sword"
+        },
+        {
+            "item": "antiquelegacy:iron_spatha"
+        },
+        {
+            "item": "antiquelegacy:iron_xiphos"
+        },
+        {
+            "item": "antiquelegacy:bronzed_gallea"
+        },
+        {
+            "item": "antiquelegacy:gallea"
+        },
+        {
+            "item": "antiquelegacy:gilded_gallea"
+        },
+        {
+            "item": "antiquelegacy:hamata"
+        },
+        {
+            "item": "antiquelegacy:hamata_optio"
+        },
+        {
+            "item": "antiquelegacy:heddernheim_helmet"
+        },
+        {
+            "item": "antiquelegacy:iron_ridge_helmet"
+        },
+        {
+            "item": "antiquelegacy:iron_intercisa"
+        },
+        {
+            "item": "antiquelegacy:iron_melos"
+        },
+        {
+            "item": "antiquelegacy:iron_niederbieber_helmet"
+        },
+        {
+            "item": "antiquelegacy:iron_pilos"
+        },
+        {
+            "item": "antiquelegacy:iron_squamata"
+        },
+        {
+            "item": "antiquelegacy:late_hamata"
+        },
+        {
+            "item": "antiquelegacy:musculata"
+        },
+        {
+            "item": "antiquelegacy:officer_squamata"
+        },
+        {
+            "item": "antiquelegacy:segmentata"
+        },
+        {
+            "item": "antiquelegacy:iron_left_hand_manika"
+        },
+        {
+            "item": "antiquelegacy:iron_right_hand_manika"
+        },
+        {
+            "item": "antiquelegacy:iron_thorax"
+        },
+        {
+            "item": "antiquelegacy:iron_scythian_scale_helmet"
+        },
+        {
+            "item": "antiquelegacy:iron_roman_greaves"
+        },
+        {
+            "item": "antiquelegacy:agen_port_helmet"
+        },
+        {
+            "item": "antiquelegacy:sava_helmet"
+        }
+    ],
+    "result": "minecraft:iron_nugget",
+    "experience": 0.1,
+    "cookingtime": 100
+}

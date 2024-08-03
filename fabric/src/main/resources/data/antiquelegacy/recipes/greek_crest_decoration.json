@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " bb",
+    "bbb",
+    "ba "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_ingots"
+    },
+    "b": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:greek_crest_decoration",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_plates"
+    },
+    "b": {
+      "tag": "c:iron_plates"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:musculata",
+    "count": 1
+  }
+}

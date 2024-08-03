@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b b",
+    "ccc",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/bronze"
+    },
+    "b": {
+      "tag": "magistuarmory:woolen_fabrics"
+    },
+    "c": {
+      "tag": "magistuarmory:chainmails/iron"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:hamata_optio",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "b b",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_nuggets"
+    },
+    "b": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:two_hair_plumes_decoration",
+    "count": 1
+  }
+}

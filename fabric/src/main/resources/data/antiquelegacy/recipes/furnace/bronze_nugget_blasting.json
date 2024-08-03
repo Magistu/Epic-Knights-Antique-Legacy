@@ -1,0 +1,146 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": [
+        {
+            "item": "antiquelegacy:eagle_standard"
+        },
+        {
+            "item": "antiquelegacy:weathered_eagle_standard"
+        },
+        {
+            "item": "antiquelegacy:attic_helmet"
+        },
+        {
+            "item": "antiquelegacy:bell_cuirass"
+        },
+        {
+            "item": "antiquelegacy:beotian_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_ridge_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_coolus"
+        },
+        {
+            "item": "antiquelegacy:bronze_intercisa"
+        },
+        {
+            "item": "antiquelegacy:bronze_melos"
+        },
+        {
+            "item": "antiquelegacy:bronze_montefortino_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_muscle_cuirass"
+        },
+        {
+            "item": "antiquelegacy:bronze_niederbieber_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_phrygian_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_pilos_closet"
+        },
+        {
+            "item": "antiquelegacy:bronze_pilos"
+        },
+        {
+            "item": "antiquelegacy:bronze_squamata"
+        },
+        {
+            "item": "antiquelegacy:roman_parade_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_apulo_corinthian_helmet"
+        },
+        {
+            "item": "antiquelegacy:chalcidian_helmet"
+        },
+        {
+            "item": "antiquelegacy:corinthian_helmet"
+        },
+        {
+            "item": "antiquelegacy:golden_ridge_helmet"
+        },
+        {
+            "item": "antiquelegacy:greek_greaves"
+        },
+        {
+            "item": "antiquelegacy:illirian_helmet"
+        },
+        {
+            "item": "antiquelegacy:murmillo_helmet"
+        },
+        {
+            "item": "antiquelegacy:open_attic_helmet"
+        },
+        {
+            "item": "antiquelegacy:provocator_helmet"
+        },
+        {
+            "item": "antiquelegacy:secutor_helmet"
+        },
+        {
+            "item": "antiquelegacy:thracian_helmet"
+        },
+        {
+            "item": "antiquelegacy:tinned_muscle_cuirass"
+        },
+        {
+            "item": "antiquelegacy:tinned_phrygian_helmet"
+        },
+        {
+            "item": "antiquelegacy:weathered_corinthian_helmet"
+        },
+        {
+            "item": "antiquelegacy:cardiophylax"
+        },
+        {
+            "item": "antiquelegacy:left_gladiator_shoulder_pad"
+        },
+        {
+            "item": "antiquelegacy:right_gladiator_shoulder_pad"
+        },
+        {
+            "item": "antiquelegacy:bronze_left_hand_manika"
+        },
+        {
+            "item": "antiquelegacy:bronze_right_hand_manika"
+        },
+        {
+            "item": "antiquelegacy:mars_of_todi_thorax"
+        },
+        {
+            "item": "antiquelegacy:scale_thorax"
+        },
+        {
+            "item": "antiquelegacy:kuban_helmet"
+        },
+        {
+            "item": "antiquelegacy:scythian_scale_thorax"
+        },
+        {
+            "item": "antiquelegacy:scythian_attic_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_scythian_scale_helmet"
+        },
+        {
+            "item": "antiquelegacy:bronze_roman_greaves"
+        },
+        {
+            "item": "antiquelegacy:celtic_montefortino_helmet"
+        },
+        {
+            "item": "antiquelegacy:la_gorge_meillet"
+        },
+        {
+            "item": "antiquelegacy:waterloo_helmet"
+        }
+    ],
+    "result": "antiquelegacy:bronze_nugget",
+    "experience": 0.1,
+    "cookingtime": 100
+}

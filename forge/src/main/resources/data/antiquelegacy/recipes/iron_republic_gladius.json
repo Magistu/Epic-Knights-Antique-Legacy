@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  b",
+    "ac ",
+    "da "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/iron"
+    },
+    "b": {
+      "tag": "forge:ingots/iron"
+    },
+    "c": {
+      "tag": "forge:plates/iron"
+    },
+    "d": {
+      "tag": "magistuarmory:hilts"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_republic_gladius",
+    "count": 1
+  }
+}

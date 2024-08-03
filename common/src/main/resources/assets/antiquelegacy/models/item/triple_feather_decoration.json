@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/triple_feather_decoration",
+        "layer1": "antiquelegacy:item/triple_feather_decoration_overlay"
+    }
+}

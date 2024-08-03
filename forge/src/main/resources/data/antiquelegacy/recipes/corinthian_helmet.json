@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cac",
+    "cbc",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/bronze"
+    },
+    "b": {
+      "tag": "forge:nuggets/bronze"
+    },
+    "c": {
+      "tag": "forge:ingots/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:corinthian_helmet",
+    "count": 1
+  }
+}

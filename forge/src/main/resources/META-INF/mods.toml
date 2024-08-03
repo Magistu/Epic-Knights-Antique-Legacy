@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/Magistu/Epic-Knights-Antique-Legacy/issues"
+displayURL="https://github.com/Magistu/Epic-Knights-Antique-Legacy"
+license = "MIT"
+[[mods]]
+modId = "antiquelegacy"
+version = "${version}"
+displayName = "Epic Knights: Antique Legacy"
+authors = ["minucius", "Magistu"]
+credits = ["Borki", "StaxiHD", "Plaguedoctor", "Superamogus", "Santusio"]
+description = '''
+Adds antique stuff to the game
+'''
+
+[[dependencies.antiquelegacy]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.antiquelegacy]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.antiquelegacy]]
+modId = "magistuarmory"
+mandatory = true
+versionRange = "[8.6,)"
+ordering = "AFTER"
+side = "BOTH"

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/antique_cloak_decoration",
+        "layer1": "antiquelegacy:item/antique_cloak_decoration_overlay"
+    }
+}

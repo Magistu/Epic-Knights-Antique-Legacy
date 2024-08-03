@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/bronze_scythian_scale_helmet"
+    }
+}

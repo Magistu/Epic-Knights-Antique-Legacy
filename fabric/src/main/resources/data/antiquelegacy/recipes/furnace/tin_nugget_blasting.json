@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": [
+        {
+            "item": "antiquelegacy:tinned_muscle_cuirass"
+        },
+        {
+            "item": "antiquelegacy:tinned_phrygian_helmet"
+        }
+    ],
+    "result": "antiquelegacy:tin_nugget",
+    "experience": 0.1,
+    "cookingtime": 100
+}

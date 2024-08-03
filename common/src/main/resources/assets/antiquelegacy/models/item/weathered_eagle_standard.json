@@ -1,0 +1,6 @@
+{
+    "parent": "antiquelegacy:item/eagle_standard",
+    "textures": {
+        "1": "antiquelegacy:item/weathered_eagle_standard"
+    }
+}

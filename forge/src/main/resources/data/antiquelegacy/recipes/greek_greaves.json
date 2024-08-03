@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b b",
+    "b b",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/bronze"
+    },
+    "b": {
+      "tag": "forge:nuggets/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:greek_greaves",
+    "count": 1
+  }
+}

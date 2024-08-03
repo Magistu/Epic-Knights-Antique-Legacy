@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/two_hair_plumes_decoration",
+        "layer1": "antiquelegacy:item/two_hair_plumes_decoration_overlay"
+    }
+}

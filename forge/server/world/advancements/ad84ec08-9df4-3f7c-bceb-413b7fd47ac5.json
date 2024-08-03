@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2023-10-08 16:54:30 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2023-10-08 16:54:31 +0300",
+      "minecraft:plains": "2023-10-08 16:54:39 +0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2023-10-08 16:58:35 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3578
+}

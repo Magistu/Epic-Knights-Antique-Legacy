@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  b",
+    " c ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/iron"
+    },
+    "b": {
+      "tag": "forge:ingots/iron"
+    },
+    "c": {
+      "tag": "magistuarmory:poles"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_triarii_spear",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "antiquelegacy:gallea"
+    },
+    "addition": {
+        "tag": "c:gold_ingots"
+    },
+    "result": {
+        "item": "antiquelegacy:gilded_gallea",
+        "count": 1
+    },
+    "template": {
+        "item": "magistuarmory:gilding_template"
+    }
+}

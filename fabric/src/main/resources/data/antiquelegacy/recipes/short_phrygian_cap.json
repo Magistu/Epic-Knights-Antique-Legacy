@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b ",
+    " a ",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "magistuarmory:woolen_fabrics"
+    },
+    "b": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:short_phrygian_cap",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/subarmalis_decoration",
+        "layer1": "antiquelegacy:item/subarmalis_decoration_overlay"
+    }
+}

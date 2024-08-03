@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/roman_feathers_decoration",
+        "layer1": "antiquelegacy:item/roman_feathers_decoration_overlay"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  b",
+    "ab ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_nuggets"
+    },
+    "b": {
+      "tag": "c:iron_ingots"
+    },
+    "c": {
+      "tag": "magistuarmory:hilts"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_early_spatha",
+    "count": 1
+  }
+}

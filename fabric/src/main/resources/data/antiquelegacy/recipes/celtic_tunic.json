@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "magistuarmory:woolen_fabrics"
+    },
+    "b": {
+      "tag": "magistuarmory:leather_strips"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:celtic_tunic",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cac",
+    "aba",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/iron"
+    },
+    "b": {
+      "tag": "forge:nuggets/bronze"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_niederbieber_helmet",
+    "count": 1
+  }
+}

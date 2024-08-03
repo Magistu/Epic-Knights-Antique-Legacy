@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "a a",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_plates"
+    },
+    "b": {
+      "tag": "c:bronze_nuggets"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:thracian_helmet",
+    "count": 1
+  }
+}

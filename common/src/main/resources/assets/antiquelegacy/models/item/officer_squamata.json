@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/officer_squamata",
+        "layer1": "antiquelegacy:item/officer_squamata_overlay"
+    }
+}

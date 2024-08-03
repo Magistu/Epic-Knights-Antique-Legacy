@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "b b",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_plates"
+    },
+    "b": {
+      "tag": "c:bronze_ingots"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:provocator_helmet",
+    "count": 1
+  }
+}

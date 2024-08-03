@@ -1,0 +1,6 @@
+﻿{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "antiquelegacy:block/deepslate_tin_ore"
+  }
+}

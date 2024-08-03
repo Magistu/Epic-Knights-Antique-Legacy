@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "b b",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_ingots"
+    },
+    "b": {
+      "tag": "c:iron_plates"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:gallea",
+    "count": 1
+  }
+}

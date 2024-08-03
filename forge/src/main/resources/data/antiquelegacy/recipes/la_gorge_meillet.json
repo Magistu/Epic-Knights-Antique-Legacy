@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b ",
+    "cac",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/bronze"
+    },
+    "b": {
+      "tag": "forge:nuggets/bronze"
+    },
+    "c": {
+      "tag": "forge:ingots/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:la_gorge_meillet",
+    "count": 1
+  }
+}

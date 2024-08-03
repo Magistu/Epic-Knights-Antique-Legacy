@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/greek_high_crest_decoration",
+        "layer1": "antiquelegacy:item/greek_high_crest_decoration_overlay"
+    }
+}

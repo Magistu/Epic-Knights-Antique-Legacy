@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " a ",
+    " a ",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/iron"
+    },
+    "b": {
+      "tag": "magistuarmory:hilts"
+    },
+    "c": {
+      "tag": "forge:ingots/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_celtic_sword",
+    "count": 1
+  }
+}

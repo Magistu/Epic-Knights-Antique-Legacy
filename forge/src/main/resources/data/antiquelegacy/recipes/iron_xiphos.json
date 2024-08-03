@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  b",
+    "ba ",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/iron"
+    },
+    "b": {
+      "tag": "forge:ingots/iron"
+    },
+    "c": {
+      "tag": "magistuarmory:hilts"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_xiphos",
+    "count": 1
+  }
+}

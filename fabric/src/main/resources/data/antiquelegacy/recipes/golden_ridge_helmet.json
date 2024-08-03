@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "b b",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:gold_ingots"
+    },
+    "b": {
+      "tag": "magistuarmory:leather_strips"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:golden_ridge_helmet",
+    "count": 1
+  }
+}

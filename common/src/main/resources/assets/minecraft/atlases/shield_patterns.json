@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_republic_scutum_pattern"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_republic_scutum_nopattern"
+    },
+    {
+      "type": "directory", "source": "entity/republic_scutum", "prefix": "entity/republic_scutum/"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_imperial_scutum_pattern"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_imperial_scutum_nopattern"
+    },
+    {
+      "type": "directory", "source": "entity/imperial_scutum", "prefix": "entity/imperial_scutum/"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_hoplon_pattern"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_hoplon_nopattern"
+    },
+    {
+      "type": "directory", "source": "entity/hoplon", "prefix": "entity/hoplon/"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/pelta_pattern"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/pelta_nopattern"
+    },
+    {
+      "type": "directory", "source": "entity/pelta", "prefix": "entity/pelta/"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_tureos_pattern"
+    },
+    {
+      "type": "single", "resource": "antiquelegacy:entity/bronze_tureos_nopattern"
+    },
+    {
+      "type": "directory", "source": "entity/tureos", "prefix": "entity/tureos/"
+    }
+  ]
+}

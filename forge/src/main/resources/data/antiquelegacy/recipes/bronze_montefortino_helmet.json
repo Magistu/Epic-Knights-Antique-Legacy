@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "a a",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/bronze"
+    },
+    "b": {
+      "tag": "forge:ingots/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:bronze_montefortino_helmet",
+    "count": 1
+  }
+}

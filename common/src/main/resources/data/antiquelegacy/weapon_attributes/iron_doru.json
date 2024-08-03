@@ -1,0 +1,14 @@
+{
+  "parent": "bettercombat:spear",
+  "attributes" : {
+    "attack_range": 3.4,
+    "pose": "",
+    "two_handed": false,
+    "category": "trident",
+    "attacks": [
+      {
+        "animation": "antiquelegacy:antique_spear"
+      }
+    ]
+  }
+}

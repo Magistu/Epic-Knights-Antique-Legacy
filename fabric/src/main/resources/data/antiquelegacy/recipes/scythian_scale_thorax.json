@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "ccc",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_nuggets"
+    },
+    "b": {
+      "item": "minecraft:leather"
+    },
+    "c": {
+      "tag": "magistuarmory:lamellar_rows/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:scythian_scale_thorax",
+    "count": 1
+  }
+}

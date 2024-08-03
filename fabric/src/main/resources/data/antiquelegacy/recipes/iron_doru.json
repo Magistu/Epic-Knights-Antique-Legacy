@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  a",
+    " c ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_ingots"
+    },
+    "b": {
+      "tag": "c:bronze_nuggets"
+    },
+    "c": {
+      "tag": "magistuarmory:poles"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_doru",
+    "count": 1
+  }
+}

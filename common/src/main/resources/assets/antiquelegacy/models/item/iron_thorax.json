@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/iron_thorax",
+        "layer1": "antiquelegacy:item/iron_thorax_overlay"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ab ",
+    " b ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/iron"
+    },
+    "b": {
+      "tag": "forge:ingots/iron"
+    },
+    "c": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_kopis",
+    "count": 1
+  }
+}

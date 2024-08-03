@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "antiquelegacy:item/black_celtic_pants",
+        "layer1": "antiquelegacy:item/black_celtic_pants_overlay"
+    }
+}
