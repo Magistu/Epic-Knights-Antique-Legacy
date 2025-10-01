@@ -35,7 +35,6 @@ allprojects {
 
     repositories {
         mavenLocal()
-        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
         maven { url "https://maven.fabricmc.net/" }
         maven { url "https://maven.architectury.dev/" }
         maven { url "https://maven.minecraftforge.net/" }
@@ -44,6 +43,10 @@ allprojects {
         maven {
             name = 'ParchmentMC'
             url = 'https://maven.parchmentmc.org'
+        }
+        maven {
+            url = "https://api.modrinth.com/maven"
+            content { includeGroup "maven.modrinth" }
         }
         mavenCentral()
     }

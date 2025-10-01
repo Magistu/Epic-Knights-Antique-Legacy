@@ -42,8 +42,9 @@ dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
     modApi "dev.architectury:architectury-neoforge:${rootProject.architectury_version}"
 
-    modImplementation "io.github.magistu:1.21.1-epic-knights-common:9.26"
+    implementation "maven.modrinth:epic-knights-shields-armor-and-weapons:${rootProject.epic_knights_version}-neoforge"
 
+    modImplementation "me.shedaniel.cloth:cloth-config-neoforge:${rootProject.cloth_config_version}"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
 }
