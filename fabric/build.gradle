@@ -33,7 +33,7 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
 
-    modImplementation "io.github.magistu:1.21.1-epic-knights-common:9.26"
+    modImplementation "io.github.magistu:1.21.1-epic-knights-common:${rootProject.epic_knights_version}"
 
     // Cloth Config provides Auto Config v1 used by common config classes
     modApi "me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}"
