@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "c c",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "magistuarmory:leather_strips"
+    },
+    "b": {
+      "item": "antiquelegacy:iron_lamellar_rows"
+    },
+    "c": {
+      "item": "antiquelegacy:bronze_ingot"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:scythian_attic_helmet",
+    "count": 1
+  }
+}
+

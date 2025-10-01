@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "tag": "magistuarmory:leather_strips"
+    },
+    "b": {
+      "item": "antiquelegacy:small_bronze_plate"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:bronze_lamellar_rows",
+    "count": 1
+  }
+}
+

@@ -11,6 +11,6 @@ pluginManagement {
 
 include("common")
 include("fabric")
-include("forge")
+include("neoforge")
 
-rootProject.name = "Epic-Knights-Antique-Legacy-1.20.2-crossversion"
+rootProject.name = "Epic-Knights-Antique-Legacy-1.21.1-crossversion"

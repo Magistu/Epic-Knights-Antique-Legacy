@@ -6,6 +6,10 @@ dependencies {
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
 
     modApi "io.github.magistu:${rootProject.minecraft_version}-epic-knights-common:${rootProject.epic_knights_version}"
+
+    // Auto Config v1 (provided by Cloth Config). Use compileOnly so common compiles against the API
+    // and each platform supplies the correct runtime (fabric/neoforge) variant.
+    compileOnly "me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}"
 }
 
 architectury {

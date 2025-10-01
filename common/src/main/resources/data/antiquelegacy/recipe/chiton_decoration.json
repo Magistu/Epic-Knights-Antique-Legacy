@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:bronze_nugget"
+    },
+    "b": {
+      "tag": "magistuarmory:woolen_fabrics"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:chiton_decoration",
+    "count": 1
+  }
+}
+

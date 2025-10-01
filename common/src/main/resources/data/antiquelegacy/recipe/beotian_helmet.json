@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "a a",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:bronze_plate"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:beotian_helmet",
+    "count": 1
+  }
+}
+

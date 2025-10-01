@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abb",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:bronze_plate"
+    },
+    "b": {
+      "tag": "magistuarmory:leather_strips"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:right_gladiator_shoulder_pad_decoration",
+    "count": 1
+  }
+}
+

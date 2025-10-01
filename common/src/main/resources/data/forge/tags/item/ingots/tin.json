@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "antiquelegacy:tin_ingot",
+    "magistuarmory:tin_ingot",
+    "#c:tin_ingots"
+  ]
+}

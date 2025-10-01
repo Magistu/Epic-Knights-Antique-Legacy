@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "antiquelegacy:bronze_ingot",
+    "magistuarmory:bronze_ingot",
+    "#c:bronze_ingots"
+  ]
+}

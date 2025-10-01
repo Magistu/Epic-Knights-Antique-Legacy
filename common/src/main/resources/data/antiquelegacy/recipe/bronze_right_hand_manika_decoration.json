@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abb",
+    "a  ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:bronze_plate"
+    },
+    "b": {
+      "tag": "magistuarmory:leather_strips"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:bronze_right_hand_manika_decoration",
+    "count": 1
+  }
+}
+

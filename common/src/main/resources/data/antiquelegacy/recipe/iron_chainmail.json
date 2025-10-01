@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    "rrr",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item": "antiquelegacy:iron_ring"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:iron_chainmail",
+    "count": 1
+  }
+}
+

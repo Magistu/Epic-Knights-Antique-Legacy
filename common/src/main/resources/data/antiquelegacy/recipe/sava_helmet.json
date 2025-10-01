@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "a a",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:bronze_plate"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:sava_helmet",
+    "count": 1
+  }
+}
+

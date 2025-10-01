@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "b b",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "antiquelegacy:iron_plate"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:agen_port_helmet",
+    "count": 1
+  }
+}
+

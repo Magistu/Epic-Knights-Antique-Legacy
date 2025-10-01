@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b b",
+    "a a",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:bronze_nugget"
+    },
+    "b": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:roman_two_feathers_decoration",
+    "count": 1
+  }
+}
+
+

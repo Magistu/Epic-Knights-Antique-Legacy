@@ -1,7 +1,7 @@
 package com.magistuarmory.antiquelegacy.misc;
 
 import com.magistuarmory.EpicKnights;
-import com.magistuarmory.antiquelegacy.item.AddonItems;
+import com.magistuarmory.antiquelegacy.items.AddonItems;
 import com.magistuarmory.antiquelegacy.util.AddonEquipments;
 import com.magistuarmory.item.ArmorDecoration;
 import com.magistuarmory.item.MedievalShieldItem;
@@ -21,9 +21,9 @@ import java.util.function.Supplier;
 
 public class AddonCreativeTabs
 {
-	public static final ResourceKey<CreativeModeTab> PARTICULAR_WEAPONS_RESOURCE_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(EpicKnights.ID, "particular_weapons"));
-	public static final ResourceKey<CreativeModeTab> ARMOR_RESOURCE_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(EpicKnights.ID, "armor"));
-	public static final ResourceKey<CreativeModeTab> ARMOR_DECORATIONS_RESOURCE_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(EpicKnights.ID, "armor_decorations"));
+	public static final ResourceKey<CreativeModeTab> PARTICULAR_WEAPONS_RESOURCE_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(EpicKnights.ID, "particular_weapons"));
+	public static final ResourceKey<CreativeModeTab> ARMOR_RESOURCE_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(EpicKnights.ID, "armor"));
+	public static final ResourceKey<CreativeModeTab> ARMOR_DECORATIONS_RESOURCE_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(EpicKnights.ID, "armor_decorations"));
 	public static final ResourceKey<CreativeModeTab> INGRIDIENTS_RESOURCE_KEY = CreativeModeTabs.INGREDIENTS;
 	public static final ResourceKey<CreativeModeTab> NATURAL_BLOCKS_RESOURCE_KEY = CreativeModeTabs.NATURAL_BLOCKS;
 
@@ -50,8 +50,7 @@ public class AddonCreativeTabs
 			append(INGRIDIENTS_RESOURCE_KEY, item);
 		
 		append(NATURAL_BLOCKS_RESOURCE_KEY, AddonItems.TIN_ORE);
-		append(NATURAL_BLOCKS_RESOURCE_KEY, AddonItems.DEEPSLATE_TIN_ORE);
-	}
+		append(NATURAL_BLOCKS_RESOURCE_KEY, AddonItems.DEEPSLATE_TIN_ORE);	}
 
 	@SafeVarargs
 	public static <I extends ItemLike, T extends Supplier<I>> void append(ResourceKey<CreativeModeTab> tab, T... items)
