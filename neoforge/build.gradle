@@ -42,8 +42,7 @@ dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
     modApi "dev.architectury:architectury-neoforge:${rootProject.architectury_version}"
 
-    // Use runtimeOnly so it is present at dev runtime but not remapped into our jar; avoid AW scanning
-    runtimeOnly "io.github.magistu:${rootProject.minecraft_version}-epic-knights-neoforge:${rootProject.epic_knights_version}"
+    modImplementation "io.github.magistu:1.21.1-epic-knights-common:9.26"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
