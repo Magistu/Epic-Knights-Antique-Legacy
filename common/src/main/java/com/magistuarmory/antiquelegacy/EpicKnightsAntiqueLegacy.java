@@ -35,6 +35,7 @@ public class EpicKnightsAntiqueLegacy
 	    AddonCreativeTabs.init();
 	    AddonMerchOffers.init();
 	    CommonEvents.init();
+		// Client-side model initialization
 		if (Platform.getEnv() == EnvType.CLIENT)
 			AddonModels.INSTANCE.init(AddonItems.INSTANCE);
 		LOGGER.info("Epic Knights: Antique Legacy initialization complete!");

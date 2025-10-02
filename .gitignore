@@ -1,19 +1,94 @@
+# Build outputs
 build/
-*.ipr
-run/
-*.iws
-out/
-*.iml
-.gradle/
 output/
+out/
 bin/
 libs/
+classes/
 
+# IDE files - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+*.idea_modules/
+
+# IDE files - Eclipse
+.metadata/
+.settings/
 .classpath
 .project
-.idea/
-classes/
-.metadata
-.vscode
-.settings
 *.launch
+bin/
+
+# Eclipse run configurations (contain personal paths)
+**/fabric_client.launch
+**/fabric_server.launch
+**/neoforge_client.launch
+**/neoforge_server.launch
+
+# IDE files - VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+*.code-workspace
+# Keep example files
+!.vscode/*.example
+
+# IDE files - NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Gradle
+.gradle/
+
+# Minecraft development
+run/
+logs/
+crash-reports/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Package manager locks (can be controversial - adjust per project needs)
+# yarn.lock
+# package-lock.json
+
+# Architectury transformer
+.architectury-transformer/
+
+# Generated documentation
+docs/generated/
+javadoc/
+
+# Test outputs
+test-output/
+test-results/
+
+# Azure deployment files (optional - remove if needed for deployment)
+.azure/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Cache directories
+.cache/
+node_modules/
+
+# Generated sources (if any)
+generated/
+target/
