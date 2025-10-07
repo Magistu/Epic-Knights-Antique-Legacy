@@ -2,10 +2,6 @@ plugins {
     id "com.github.johnrengelman.shadow" version "7.0.0"
 }
 
-base {
-    archivesName = "Fabric-1.21.1-Epic-Knights-Antique-Legacy"
-}
-
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
 }
@@ -33,10 +29,7 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
 
-    modImplementation "io.github.magistu:1.21.1-epic-knights-common:9.26"
-
-    // Cloth Config provides Auto Config v1 used by common config classes
-    modApi "me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}"
+    modApi "io.github.magistu:${rootProject.minecraft_version}-epic-knights-fabric:${rootProject.epic_knights_version}"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
@@ -51,57 +44,6 @@ processResources {
         expand "version": project.version,
                 "mc_version": project.minecraft_version,
                 "loader_version": project.fabric_loader_version
-    }
-
-    // Normalize recipe JSONs to Minecraft 1.21.1 schema
-    // 1) Convert result strings to objects and rename "item" to "id" within result objects
-    // 2) Migrate material-first c: tags to category-first c: tags (e.g., c:bronze_ingots -> c:ingots/bronze)
-    doLast {
-        def fixText = { String s ->
-            def t = s.replaceAll(/"result"\s*:\s*"([^"]+)"/, '"result": { "id": "$1" }')
-
-            // Normalize tag paths from material-first to category-first for cross-loader compatibility
-            // c:bronze_ingots -> c:ingots/bronze, etc.
-            t = t.replaceAll(/"tag"\s*:\s*"c:(bronze|iron|gold|copper|tin)_ingots"/, '"tag": "c:ingots/$1"')
-            t = t.replaceAll(/"tag"\s*:\s*"c:(bronze|iron|gold|copper|tin)_nuggets"/, '"tag": "c:nuggets/$1"')
-            t = t.replaceAll(/"tag"\s*:\s*"c:(bronze|iron|gold|copper|tin)_plates"/,  '"tag": "c:plates/$1"')
-            t = t.replaceAll(/("result"\s*:\s*\{[^}]*?)"item"/, '$1"id"')
-
-            // Tag path normalization map: material-first -> category-first
-            Map<String, String> tagMap = [
-                    '"tag": "c:bronze_ingots"' : '"tag": "c:ingots/bronze"',
-                    '"tag": "c:bronze_nuggets"': '"tag": "c:nuggets/bronze"',
-                    '"tag": "c:bronze_plates"' : '"tag": "c:plates/bronze"',
-
-                    '"tag": "c:iron_ingots"'  : '"tag": "c:ingots/iron"',
-                    '"tag": "c:iron_nuggets"' : '"tag": "c:nuggets/iron"',
-                    '"tag": "c:iron_plates"'  : '"tag": "c:plates/iron"',
-
-                    '"tag": "c:gold_ingots"'  : '"tag": "c:ingots/gold"',
-                    '"tag": "c:gold_nuggets"' : '"tag": "c:nuggets/gold"',
-
-                    '"tag": "c:copper_ingots"': '"tag": "c:ingots/copper"',
-                    '"tag": "c:copper_nuggets"': '"tag": "c:nuggets/copper"',
-
-                    '"tag": "c:tin_ingots"'   : '"tag": "c:ingots/tin"',
-                    '"tag": "c:tin_nuggets"'  : '"tag": "c:nuggets/tin"'
-            ]
-            tagMap.each { k, v -> t = t.replace(k, v) }
-            return t
-        }
-        outputs.files.each { out ->
-            fileTree(out).matching { include '**/recipes/**/*.json' }.each { File f ->
-                try {
-                    def orig = f.getText('UTF-8')
-                    def mod = fixText(orig)
-                    if (mod != orig) {
-                        f.write(mod, 'UTF-8')
-                    }
-                } catch (Exception e) {
-                    logger.warn("Failed to normalize recipe JSON: ${f}", e)
-                }
-            }
-        }
     }
 }
 

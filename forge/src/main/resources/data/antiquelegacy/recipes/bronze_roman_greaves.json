@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "cbc",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/bronze"
+    },
+    "b": {
+      "tag": "magistuarmory:leather_strips"
+    },
+    "c": {
+      "tag": "forge:ingots/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:bronze_roman_greaves",
+    "count": 1
+  }
+}

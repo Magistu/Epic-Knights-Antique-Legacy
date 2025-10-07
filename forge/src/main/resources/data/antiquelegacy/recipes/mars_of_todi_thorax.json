@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b b",
+    "ccc",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "tag": "forge:nuggets/bronze"
+    },
+    "c": {
+      "tag": "magistuarmory:lamellar_rows/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:mars_of_todi_thorax",
+    "count": 1
+  }
+}

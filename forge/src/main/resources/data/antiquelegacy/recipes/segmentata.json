@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b b",
+    "bab",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/bronze"
+    },
+    "b": {
+      "tag": "forge:plates/iron"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:segmentata",
+    "count": 1
+  }
+}

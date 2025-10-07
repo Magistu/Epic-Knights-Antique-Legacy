@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ca",
+    " dc",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:iron_antique_spear"
+    },
+    "b": {
+      "tag": "c:iron_ingots"
+    },
+    "c": {
+      "tag": "magistuarmory:small_plates/iron"
+    },
+    "d": {
+      "tag": "magistuarmory:poles"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_sarissa",
+    "count": 1
+  }
+}

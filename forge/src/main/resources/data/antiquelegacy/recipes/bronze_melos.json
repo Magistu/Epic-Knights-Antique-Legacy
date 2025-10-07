@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "bbb",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:plates/bronze"
+    },
+    "b": {
+      "tag": "forge:ingots/bronze"
+    },
+    "c": {
+      "tag": "forge:nuggets/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:bronze_melos",
+    "count": 1
+  }
+}

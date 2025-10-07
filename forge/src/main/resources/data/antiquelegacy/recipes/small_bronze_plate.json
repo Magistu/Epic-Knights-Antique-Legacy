@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa ",
+    "aa ",
+    "aa "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:small_bronze_plate",
+    "count": 8
+  }
+}

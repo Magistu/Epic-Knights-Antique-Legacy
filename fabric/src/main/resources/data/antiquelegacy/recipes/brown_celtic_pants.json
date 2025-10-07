@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "tag": "magistuarmory:woolen_fabrics"
+    },
+    "b": {
+      "tag": "magistuarmory:leather_strips"
+    },
+    "c": {
+      "item": "minecraft:brown_dye"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:brown_celtic_pants",
+    "count": 1
+  }
+}

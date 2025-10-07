@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a  ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/tin"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:tin_nugget",
+    "count": 9
+  }
+}

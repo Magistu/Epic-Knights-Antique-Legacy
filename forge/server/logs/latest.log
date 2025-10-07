@@ -1,0 +1,116 @@
+[16:40:46] [main/INFO] (Launcher) ModLauncher running: args [--launchTarget, forgeserveruserdev, --gameDir, ., --fml.forgeVersion, 48.0.0, --fml.mcVersion, 1.20.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230921.100330, nogui]
+[16:40:46] [main/INFO] (Launcher) ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.7 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[16:40:46] [main/INFO] (ImmediateWindowHandler) ImmediateWindowProvider not loading because launch target is forgeserveruserdev
+[16:40:46] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/lut8/.gradle/caches/modules-2/files-2.1/dev.architectury/mixin-patched/0.8.5.10/a8cf27a2274cbb5030707cf66df222a766435a4/mixin-patched-0.8.5.10.jar%23127!/ Service=ModLauncher Env=SERVER
+[16:40:47] [main/WARN] (ModFileParser) Mod file C:\Users\lut8\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.2-48.0.0\1c0c1674abc46543b24234ef81762a473e6ef315\javafmllanguage-1.20.2-48.0.0.jar is missing mods.toml file
+[16:40:47] [main/WARN] (ModFileParser) Mod file C:\Users\lut8\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.2-48.0.0\41ea84d5e0ec74a1d60ac59b2614f4e8ed32303a\lowcodelanguage-1.20.2-48.0.0.jar is missing mods.toml file
+[16:40:47] [main/WARN] (ModFileParser) Mod file C:\Users\lut8\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.2-48.0.0\9d99805f2e1f5b277743a2f1340d62ca7b16c441\mclanguage-1.20.2-48.0.0.jar is missing mods.toml file
+[16:40:47] [main/WARN] (ModFileParser) Mod file C:\Users\lut8\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.2-48.0.0\d5a2f9199b0e0ab4325233e427bc79b84d5f9018\fmlcore-1.20.2-48.0.0.jar is missing mods.toml file
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file javafmllanguage-1.20.2-48.0.0.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@563a32a2
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file lowcodelanguage-1.20.2-48.0.0.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@563a32a2
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file mclanguage-1.20.2-48.0.0.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@563a32a2
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file fmlcore-1.20.2-48.0.0.jar of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@563a32a2
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file forge-1.20.2-48.0.0-minecraft-merged-project-@forge-1.20.2-loom.mappings.1_20_2.layered+hash.40359-v2-forge-1.20.2-48.0.0.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@563a32a2
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file main of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@563a32a2
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file  of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@563a32a2
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file architectury-forge-10.0.8.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@36545439
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file cloth-config-forge-12.0.109.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@36545439
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file 2183506864878043241.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@36545439
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file architectury-forge-10.0.8.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@36545439
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file cloth-config-forge-12.0.109.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@36545439
+[16:40:47] [main/INFO] (ModDiscoverer) Found mod file 2183506864878043241.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@36545439
+[16:40:47] [main/INFO] (JarInJarDependencyLocator) No dependencies to load found. Skipping!
+[16:40:48] [main/INFO] (LaunchServiceHandler) Launching target 'forgeserveruserdev' with arguments [--gameDir, ., nogui]
+[16:40:48] [main/INFO] (unprotect) Found 7523 Minecraft classes
+[16:40:48] [main/INFO] (mixin) Remapping refMap architectury-forge-refmap.json using RemapperChain (Architectury Patched)
+[16:40:48] [main/INFO] (mixin) Remapping refMap architectury-common-refmap.json using RemapperChain (Architectury Patched)
+[08окт.2023 16:40:52.249] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 48.0.0, for MC 1.20.2 with MCP 20230921.100330
+[08окт.2023 16:40:52.250] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v48.0.0 Initialized
+[08окт.2023 16:40:52.327] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[08окт.2023 16:40:53.501] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id magistuarmory:packet_long_reach_attack
+[08окт.2023 16:40:53.517] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id magistuarmory:packet_lance_collision
+[08окт.2023 16:40:54.163] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[08окт.2023 16:40:54.774] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: BETA_OUTDATED Current: 48.0.0 Target: 48.0.19
+[08окт.2023 16:40:55.212] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[08окт.2023 16:40:55.337] [main/WARN] [net.minecraftforge.common.ForgeHooks/WP]: The following mods have version differences that were not resolved:
+generated_66e4a3f (version 1 -> MISSING)
+Things may not work well.
+[08окт.2023 16:40:55.641] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/lut8/Java/modding/Epic-Knights-1.20.2-crossversion/.gradle/loom-cache/minecraftMaven/net/minecraft/forge-1.20.2-48.0.0-minecraft-merged-project-@forge/1.20.2-loom.mappings.1_20_2.layered+hash.40359-v2-forge-1.20.2-48.0.0/forge-1.20.2-48.0.0-minecraft-merged-project-@forge-1.20.2-loom.mappings.1_20_2.layered+hash.40359-v2-forge-1.20.2-48.0.0.jar%23195!/assets/.mcassetsroot' uses unexpected schema
+[08окт.2023 16:40:55.641] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/lut8/Java/modding/Epic-Knights-1.20.2-crossversion/.gradle/loom-cache/minecraftMaven/net/minecraft/forge-1.20.2-48.0.0-minecraft-merged-project-@forge/1.20.2-loom.mappings.1_20_2.layered+hash.40359-v2-forge-1.20.2-48.0.0/forge-1.20.2-48.0.0-minecraft-merged-project-@forge-1.20.2-loom.mappings.1_20_2.layered+hash.40359-v2-forge-1.20.2-48.0.0.jar%23195!/data/.mcassetsroot' uses unexpected schema
+[08окт.2023 16:40:55.689] [main/WARN] [net.minecraft.server.MinecraftServer/]: Missing data pack mod:generated_66e4a3f
+[08окт.2023 16:40:56.486] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[08окт.2023 16:40:56.557] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1271 advancements
+[08окт.2023 16:40:56.789] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.2
+[08окт.2023 16:40:56.789] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[08окт.2023 16:40:56.789] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: CREATIVE
+[08окт.2023 16:40:56.789] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[08окт.2023 16:40:56.824] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[08окт.2023 16:40:56.890] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[08окт.2023 16:40:56.961] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[08окт.2023 16:40:56.961] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[08окт.2023 16:40:56.961] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[08окт.2023 16:40:56.961] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[08окт.2023 16:40:56.989] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[08окт.2023 16:40:58.014] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[08окт.2023 16:40:58.026] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[08окт.2023 16:40:58.583] [Worker-Main-17/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[08окт.2023 16:40:59.016] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[08окт.2023 16:41:00.406] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[08окт.2023 16:41:00.406] [Worker-Main-22/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[08окт.2023 16:41:00.517] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[08окт.2023 16:41:01.032] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[08окт.2023 16:41:01.515] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 89%
+[08окт.2023 16:41:02.017] [Worker-Main-19/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 92%
+[08окт.2023 16:41:02.247] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4232 ms
+[08окт.2023 16:41:02.247] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (5.280s)! For help, type "help"
+[08окт.2023 16:41:02.258] [Server thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[08окт.2023 16:41:02.261] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[08окт.2023 16:41:39.556] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[/[2620:9b::193c:50a1]:53177] logged in with entity id 3 at (-3.5, 77.0, 45.5)
+[08окт.2023 16:41:39.571] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08окт.2023 16:45:51.181] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: You logged in from another location
+[08окт.2023 16:45:51.182] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[08окт.2023 16:45:51.633] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[/[2620:9b::193c:50a1]:53364] logged in with entity id 661 at (-6.465378425771742, 76.30973337579347, 51.4555177978291)
+[08окт.2023 16:45:51.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08окт.2023 16:46:03.131] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: You logged in from another location
+[08окт.2023 16:46:03.131] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[08окт.2023 16:46:03.368] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[/[2620:9b::193c:50a1]:53368] logged in with entity id 754 at (-10.740659090383613, 89.05406517837014, 53.26619816782715)
+[08окт.2023 16:46:03.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08окт.2023 16:46:17.082] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Dev> rt
+[08окт.2023 16:46:20.482] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[08окт.2023 16:46:20.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[08окт.2023 16:46:31.274] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[/[2620:9b::193c:50a1]:53387] logged in with entity id 875 at (-8.664132522327808, 80.86252259193118, 36.37074656283107)
+[08окт.2023 16:46:31.275] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08окт.2023 16:46:33.443] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Dev> fwee
+[08окт.2023 16:46:36.081] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[08окт.2023 16:46:36.081] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[08окт.2023 16:49:17.253] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[/[2620:9b::193c:50a1]:53476] logged in with entity id 939 at (4.699999988079071, 67.0, 22.229554082558394)
+[08окт.2023 16:49:17.254] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08окт.2023 16:49:20.739] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Dev> ef
+[08окт.2023 16:49:27.387] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: You logged in from another location
+[08окт.2023 16:49:27.387] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[08окт.2023 16:49:27.747] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[/[2620:9b::193c:50a1]:53479] logged in with entity id 981 at (4.699999988079071, 67.0, 22.229554082558394)
+[08окт.2023 16:49:27.748] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08окт.2023 16:49:30.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Dev> frwe
+[08окт.2023 16:54:30.567] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: lut8@bk.ru[/[2620:9b::193c:50a1]:61560] logged in with entity id 2069 at (8.5, 68.0, 57.5)
+[08окт.2023 16:54:30.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: lut8@bk.ru joined the game
+[08окт.2023 16:54:34.291] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <lut8@bk.ru> efwe
+[08окт.2023 16:56:12.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown game mode: 
+[08окт.2023 16:56:12.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: gamemode @a survival<--[HERE]
+[08окт.2023 16:56:26.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set Dev's game mode to Survival Mode
+[08окт.2023 16:56:26.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set lut8@bk.ru's game mode to Survival Mode
+[08окт.2023 16:57:28.782] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Expected whitespace to end one argument, but found trailing data
+[08окт.2023 16:57:28.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ...istuarmory:armet @a<--[HERE]
+[08окт.2023 16:57:44.881] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Invalid name or UUID
+[08окт.2023 16:57:44.881] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: give "magistuarmory:armet" @a<--[HERE]
+[08окт.2023 16:57:54.633] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown item 'minecraft:'
+[08окт.2023 16:57:54.633] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: give @a "magistuarmory:armet"<--[HERE]
+[08окт.2023 16:58:11.935] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set Dev's game mode to Creative Mode
+[08окт.2023 16:58:11.935] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set lut8@bk.ru's game mode to Creative Mode
+[08окт.2023 17:00:02.532] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set Dev's game mode to Survival Mode
+[08окт.2023 17:00:02.532] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set lut8@bk.ru's game mode to Survival Mode
+[08окт.2023 17:02:10.532] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set Dev's game mode to Creative Mode
+[08окт.2023 17:02:10.532] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set lut8@bk.ru's game mode to Creative Mode
+[08окт.2023 17:09:31.932] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[08окт.2023 17:09:31.933] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[08окт.2023 17:09:35.232] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: lut8@bk.ru lost connection: Disconnected
+[08окт.2023 17:09:35.232] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: lut8@bk.ru left the game

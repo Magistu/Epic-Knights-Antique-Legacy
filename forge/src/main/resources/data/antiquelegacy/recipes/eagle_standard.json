@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " bd",
+    " cb",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/iron"
+    },
+    "b": {
+      "tag": "forge:plates/bronze"
+    },
+    "c": {
+      "tag": "magistuarmory:poles"
+    },
+    "d": {
+      "tag": "forge:ingots/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:eagle_standard",
+    "count": 1
+  }
+}

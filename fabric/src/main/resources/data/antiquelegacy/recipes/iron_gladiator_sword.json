@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  a",
+    "ba ",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_ingots"
+    },
+    "b": {
+      "tag": "c:bronze_nuggets"
+    },
+    "c": {
+      "tag": "magistuarmory:hilts"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_gladiator_sword",
+    "count": 1
+  }
+}

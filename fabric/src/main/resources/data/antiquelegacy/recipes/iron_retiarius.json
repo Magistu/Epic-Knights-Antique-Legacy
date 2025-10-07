@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " aa",
+    " ba",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_nuggets"
+    },
+    "b": {
+      "tag": "c:iron_ingots"
+    },
+    "c": {
+      "tag": "magistuarmory:poles"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_retiarius",
+    "count": 1
+  }
+}

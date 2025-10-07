@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "bab",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/tin"
+    },
+    "b": {
+      "tag": "forge:nuggets/copper"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:bronze_mixture",
+    "count": 1
+  }
+}

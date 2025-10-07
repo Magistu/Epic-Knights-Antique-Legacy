@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ab",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "magistuarmory:woolen_fabrics"
+    },
+    "b": {
+      "tag": "forge:nuggets/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:antique_cloak_decoration",
+    "count": 1
+  }
+}

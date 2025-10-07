@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " n ",
+    "n n",
+    " n "
+  ],
+  "key": {
+    "n": {
+      "tag": "c:iron_nuggets"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_ring",
+    "count": 8
+  }
+}

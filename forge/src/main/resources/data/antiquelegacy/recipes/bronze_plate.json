@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:bronze_plate",
+    "count": 2
+  }
+}

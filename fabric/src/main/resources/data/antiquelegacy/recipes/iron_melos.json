@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "a a",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_plates"
+    },
+    "b": {
+      "tag": "c:iron_ingots"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_melos",
+    "count": 1
+  }
+}

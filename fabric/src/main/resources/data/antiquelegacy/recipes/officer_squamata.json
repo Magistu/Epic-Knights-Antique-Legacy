@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "cac",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "tag": "magistuarmory:lamellar_rows/iron"
+    },
+    "c": {
+      "tag": "magistuarmory:lamellar_rows/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:officer_squamata",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "cb ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_nuggets"
+    },
+    "b": {
+      "tag": "c:bronze_ingots"
+    },
+    "c": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:greek_high_crest_decoration",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "ccc",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "tag": "c:bronze_plates"
+    },
+    "c": {
+      "tag": "magistuarmory:chainmails/iron"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:hamata",
+    "count": 1
+  }
+}

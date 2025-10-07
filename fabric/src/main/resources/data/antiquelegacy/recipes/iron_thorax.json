@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b b",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_plates"
+    },
+    "b": {
+      "tag": "c:gold_nuggets"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_thorax",
+    "count": 1
+  }
+}

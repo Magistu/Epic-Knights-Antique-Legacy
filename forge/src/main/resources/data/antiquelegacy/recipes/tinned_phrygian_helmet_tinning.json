@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "antiquelegacy:bronze_phrygian_helmet"
+  },
+  "addition": {
+    "tag": "forge:ingots/tin"
+  },
+  "result": {
+    "item": "antiquelegacy:tinned_phrygian_helmet",
+    "count": 1
+  },
+  "template": {
+    "item": "magistuarmory:gilding_template"
+  }
+}

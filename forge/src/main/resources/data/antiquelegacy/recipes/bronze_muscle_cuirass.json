@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b b",
+    "bab",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/bronze"
+    },
+    "b": {
+      "tag": "forge:plates/bronze"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:bronze_muscle_cuirass",
+    "count": 1
+  }
+}

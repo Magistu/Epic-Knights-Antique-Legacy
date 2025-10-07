@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa ",
+    "aa ",
+    "aa "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/iron"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:small_iron_plate",
+    "count": 8
+  }
+}

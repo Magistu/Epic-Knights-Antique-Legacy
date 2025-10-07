@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "antiquelegacy",
-  "version": "2.0",
+  "version": "1.8",
   "name": "Epic Knights: Antique Legacy",
   "description": "Adds antique stuff to the game",
   "authors": [
-    "Axel", "minucius", "Magistu"
+    "minucius", "Magistu"
   ],
   "contributors": [
     "Borki", "StaxiHD", "Plaguedoctor", "Superamogus", "Santusio"
@@ -25,7 +25,7 @@
   },
   "depends": {
     "fabric": "*",
-    "minecraft": ">=1.21.1",
-    "magistuarmory": ">=9.26"
+    "minecraft": ">=1.20.0",
+    "magistuarmory": ">=8.3"
   }
 }

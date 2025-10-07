@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aba",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:bronze_plates"
+    },
+    "b": {
+      "tag": "c:bronze_nuggets"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:attic_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "antiquelegacy:weathered_eagle_standard"
+    },
+    "addition": {
+        "tag": "forge:ingots/bronze"
+    },
+    "result": {
+        "item": "antiquelegacy:eagle_standard",
+        "count": 1
+    },
+    "template": {
+        "item": "magistuarmory:gilding_template"
+    }
+}

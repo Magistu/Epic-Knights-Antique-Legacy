@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  a",
+    " b ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:iron_ingots"
+    },
+    "b": {
+      "tag": "magistuarmory:poles"
+    }
+  },
+  "result": {
+    "item": "antiquelegacy:iron_antique_spear",
+    "count": 1
+  }
+}
