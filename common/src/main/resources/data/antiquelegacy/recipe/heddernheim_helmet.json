@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:bronze_plate"
+      "tag": "c:plates/bronze"
     },
     "b": {
-      "item": "antiquelegacy:iron_plate"
+      "tag": "c:plates/iron"
     },
     "c": {
       "item": "minecraft:feather"

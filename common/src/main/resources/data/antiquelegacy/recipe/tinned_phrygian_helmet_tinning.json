@@ -4,7 +4,7 @@
     "item": "antiquelegacy:bronze_phrygian_helmet"
   },
   "addition": {
-    "item": "antiquelegacy:tin_ingot"
+    "tag": "c:ingots/tin"
   },
   "result": {
     "id": "antiquelegacy:tinned_phrygian_helmet",

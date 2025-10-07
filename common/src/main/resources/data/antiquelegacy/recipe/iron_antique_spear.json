@@ -7,7 +7,7 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     },
     "b": {
       "tag": "magistuarmory:poles"

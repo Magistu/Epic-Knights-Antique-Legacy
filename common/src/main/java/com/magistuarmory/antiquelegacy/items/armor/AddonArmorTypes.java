@@ -79,7 +79,7 @@ public class AddonArmorTypes
 
 	public static final ArmorType HAMATA_OPTIO = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "hamata_optio"), parse("antiquelegacy:hamata"), 0.0f, 0.0f, new Integer[] { 0, 0, 240, 0 }, new Integer[] { 0, 0, 5, 0 }, 9, SoundEvents.ARMOR_EQUIP_CHAIN, ARMOR_CONFIG.enableHamataOptio, false, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
 
-	public static final ArmorType HEDDERNHEIM_HELMET = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "heddernheim_helmet"), parse("antiquelegacy:heddernheim_helmet"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 200 }, new Integer[] { 0, 0, 0, 2 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableHeddernheimHelmet, false, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
+	public static final ArmorType HEDDERNHEIM_HELMET = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "heddernheim_helmet"), parse("antiquelegacy:heddernheim_helmet"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 200 }, new Integer[] { 0, 0, 0, 2 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableHeddernheimHelmet, true, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
 
 	public static final ArmorType ILLIRIAN_HELMET = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "illirian_helmet"), parse("antiquelegacy:illirian_helmet"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 160 }, new Integer[] { 0, 0, 0, 2 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableIllirianHelmet, false, useForgeStyleTags() ? "forge:ingots/bronze" : "c:bronze_ingots");
 
@@ -101,7 +101,7 @@ public class AddonArmorTypes
 
 	public static final ArmorType MUSCULATA = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "musculata"), parse("antiquelegacy:musculata"), 0.0f, 0.0f, new Integer[] { 0, 0, 260, 0 }, new Integer[] { 0, 0, 6, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableMusculata, false, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
 
-	public static final ArmorType OFFICER_SQUAMATA = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "officer_squamata"), parse("antiquelegacy:officer_squamata"), 0.0f, 0.0f, new Integer[] { 0, 0, 240, 0 }, new Integer[] { 0, 0, 5, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableOfficerSquamata, false, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
+	public static final ArmorType OFFICER_SQUAMATA = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "officer_squamata"), parse("antiquelegacy:officer_squamata"), 0.0f, 0.0f, new Integer[] { 0, 0, 240, 0 }, new Integer[] { 0, 0, 5, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableOfficerSquamata, true, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
 
 	public static final ArmorType OPEN_ATTIC_HELMET = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "open_attic_helmet"), parse("antiquelegacy:open_attic_helmet"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 160 }, new Integer[] { 0, 0, 0, 2 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableOpenAtticHelmet, false, useForgeStyleTags() ? "forge:ingots/bronze" : "c:bronze_ingots");
 
@@ -180,22 +180,9 @@ public class AddonArmorTypes
 
 	public static final ArmorType MARS_OF_TODI_THORAX = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "mars_of_todi_thorax"), parse("antiquelegacy:thorax"), 0.0f, 0.0f, new Integer[] { 0, 0, 200, 0 }, new Integer[] { 0, 0, 4, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableMarsOfTodiThorax, false, useForgeStyleTags() ? "forge:ingots/bronze" : "c:bronze_ingots");
 
-	public static final ArmorType LINOTHORAX = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "linothorax"),
-		parse("antiquelegacy:thorax"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 0, 130, 0 },
-		new Integer[] { 0, 0, 4, 0 },
-		9,
-		SoundEvents.ARMOR_EQUIP_IRON,
-		ARMOR_CONFIG.enableLinothorax,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType LINOTHORAX = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "linothorax"), parse("antiquelegacy:thorax"), 0.0f, 0.0f, new Integer[] { 0, 0, 130, 0 }, new Integer[] { 0, 0, 4, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableLinothorax, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
-	public static final ArmorType IRON_THORAX = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "iron_thorax"), parse("antiquelegacy:thorax"), 0.0f, 0.0f, new Integer[] { 0, 0, 230, 0 }, new Integer[] { 0, 0, 5, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableIronThorax, false, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
+	public static final ArmorType IRON_THORAX = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "iron_thorax"), parse("antiquelegacy:thorax"), 0.0f, 0.0f, new Integer[] { 0, 0, 230, 0 }, new Integer[] { 0, 0, 5, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableIronThorax, true, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
 
 	public static final ArmorType SCALE_THORAX = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "scale_thorax"), parse("antiquelegacy:thorax"), 0.0f, 0.0f, new Integer[] { 0, 0, 200, 0 }, new Integer[] { 0, 0, 4, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableScaleThorax, false, useForgeStyleTags() ? "forge:ingots/bronze" : "c:bronze_ingots");
 
@@ -230,35 +217,9 @@ public class AddonArmorTypes
 
 	public static final ArmorType BRONZE_SCYTHIAN_SCALE_HELMET = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "bronze_scythian_scale_helmet"), parse("antiquelegacy:scythian_scale_helmet"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 170 }, new Integer[] { 0, 0, 0, 2 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableBronzeScythianScaleHelmet, false, useForgeStyleTags() ? "forge:ingots/bronze" : "c:bronze_ingots");
 
-	public static final ArmorType PHRYGIAN_CAP = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "phrygian_cap"),
-		parse("antiquelegacy:phrygian_cap"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 0, 0, 70 },
-		new Integer[] { 0, 0, 0, 1 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enablePhrygianCap,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType PHRYGIAN_CAP = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "phrygian_cap"), parse("antiquelegacy:phrygian_cap"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 70 }, new Integer[] { 0, 0, 0, 1 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enablePhrygianCap, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
-	public static final ArmorType SHORT_PHRYGIAN_CAP = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "short_phrygian_cap"),
-		parse("antiquelegacy:phrygian_cap"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 0, 0, 70 },
-		new Integer[] { 0, 0, 0, 1 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enableShortPhrygianCap,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType SHORT_PHRYGIAN_CAP = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "short_phrygian_cap"), parse("antiquelegacy:phrygian_cap"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 70 }, new Integer[] { 0, 0, 0, 1 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableShortPhrygianCap, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
 	public static final ArmorType IRON_ROMAN_GREAVES = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "iron_roman_greaves"), parse("antiquelegacy:greek_greaves"), 0.0f, 0.0f, new Integer[] { 0, 180, 0, 0 }, new Integer[] { 0, 2, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableIronRomanGreaves, false, useForgeStyleTags() ? "forge:ingots/iron" : "c:iron_ingots");
 
@@ -274,95 +235,17 @@ public class AddonArmorTypes
 
 	public static final ArmorType WATERLOO_HELMET = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "waterloo_helmet"), parse("antiquelegacy:waterloo_helmet"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 170 }, new Integer[] { 0, 0, 0, 2 }, 9, SoundEvents.ARMOR_EQUIP_IRON, ARMOR_CONFIG.enableWaterlooHelmet, false, useForgeStyleTags() ? "forge:ingots/bronze" : "c:bronze_ingots");
 
-	public static final ArmorType CELTIC_TUNIC = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "celtic_tunic"),
-		parse("antiquelegacy:tunic"),
-		0.0f,
-		0.0f,
-		new Integer[] { 90, 0, 120, 0 },
-		new Integer[] { 1, 0, 1, 0 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enableCelticTunic,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType CELTIC_TUNIC = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "celtic_tunic"), parse("antiquelegacy:tunic"), 0.0f, 0.0f, new Integer[] { 90, 0, 120, 0 }, new Integer[] { 1, 0, 1, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableCelticTunic, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
-	public static final ArmorType CELTIC_PANTS = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "celtic_pants"),
-		withDefaultNamespace("default"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 90, 0, 0 },
-		new Integer[] { 0, 1, 0, 0 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enableCelticPants,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType CELTIC_PANTS = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "celtic_pants"), withDefaultNamespace("default"), 0.0f, 0.0f, new Integer[] { 0, 90, 0, 0 }, new Integer[] { 0, 1, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableCelticPants, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
-	public static final ArmorType RED_CELTIC_PANTS = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "red_celtic_pants"),
-		withDefaultNamespace("default"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 90, 0, 0 },
-		new Integer[] { 0, 1, 0, 0 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enableRedCelticPants,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType RED_CELTIC_PANTS = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "red_celtic_pants"), withDefaultNamespace("default"), 0.0f, 0.0f, new Integer[] { 0, 90, 0, 0 }, new Integer[] { 0, 1, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableRedCelticPants, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
-	public static final ArmorType GREEN_CELTIC_PANTS = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "green_celtic_pants"),
-		withDefaultNamespace("default"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 90, 0, 0 },
-		new Integer[] { 0, 1, 0, 0 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enableGreenCelticPants,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType GREEN_CELTIC_PANTS = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "green_celtic_pants"), withDefaultNamespace("default"), 0.0f, 0.0f, new Integer[] { 0, 90, 0, 0 }, new Integer[] { 0, 1, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableGreenCelticPants, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
-	public static final ArmorType BROWN_CELTIC_PANTS = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "brown_celtic_pants"),
-		withDefaultNamespace("default"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 90, 0, 0 },
-		new Integer[] { 0, 1, 0, 0 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enableBrownCelticPants,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType BROWN_CELTIC_PANTS = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "brown_celtic_pants"), withDefaultNamespace("default"), 0.0f, 0.0f, new Integer[] { 0, 90, 0, 0 }, new Integer[] { 0, 1, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableBrownCelticPants, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
-	public static final ArmorType BLACK_CELTIC_PANTS = new ArmorType(
-		ArmorTypes.ARMOR_MATERIALS,
-		fromNamespaceAndPath("antiquelegacy", "black_celtic_pants"),
-		withDefaultNamespace("default"),
-		0.0f,
-		0.0f,
-		new Integer[] { 0, 90, 0, 0 },
-		new Integer[] { 0, 1, 0, 0 },
-		9,
-		SoundEvents.ARMOR_EQUIP_LEATHER,
-		ARMOR_CONFIG.enableBlackCelticPants,
-		true,
-		() -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric")))
-	);
+	public static final ArmorType BLACK_CELTIC_PANTS = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "black_celtic_pants"), withDefaultNamespace("default"), 0.0f, 0.0f, new Integer[] { 0, 90, 0, 0 }, new Integer[] { 0, 1, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableBlackCelticPants, true, () -> Ingredient.of(TagKey.create(Registries.ITEM, parse("magistuarmory:woolen_fabric"))));
 
 	public static final ArmorType FUR_CLOAK = new ArmorType(ArmorTypes.ARMOR_MATERIALS, fromNamespaceAndPath("antiquelegacy", "fur_cloak"), parse("antiquelegacy:fur_cloak"), 0.0f, 0.0f, new Integer[] { 0, 0, 90, 0 }, new Integer[] { 0, 0, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, ARMOR_CONFIG.enableFurCloak, true);
 

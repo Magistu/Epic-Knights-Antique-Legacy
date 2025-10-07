@@ -10,7 +10,7 @@
       "item": "antiquelegacy:iron_antique_spear"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     },
     "c": {
       "item": "antiquelegacy:small_iron_plate"

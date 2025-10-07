@@ -7,7 +7,7 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:gold_ingot"
+      "tag": "c:ingots/gold"
     },
     "b": {
       "tag": "magistuarmory:leather_strips"

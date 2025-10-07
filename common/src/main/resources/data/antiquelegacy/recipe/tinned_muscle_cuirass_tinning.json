@@ -4,7 +4,7 @@
     "item": "antiquelegacy:bronze_muscle_cuirass"
   },
   "addition": {
-    "item": "antiquelegacy:tin_ingot"
+    "tag": "c:ingots/tin"
   },
   "result": {
     "id": "antiquelegacy:tinned_muscle_cuirass",

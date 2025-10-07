@@ -13,7 +13,7 @@
       "item": "antiquelegacy:iron_lamellar_rows"
     },
     "c": {
-      "item": "antiquelegacy:bronze_ingot"
+      "tag": "c:ingots/bronze"
     }
   },
   "result": {

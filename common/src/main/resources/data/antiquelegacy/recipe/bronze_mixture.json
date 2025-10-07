@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:tin_nugget"
+      "tag": "c:nuggets/tin"
     },
     "b": {
-      "item": "antiquelegacy:copper_nugget"
+      "tag": "c:nuggets/copper"
     }
   },
   "result": {

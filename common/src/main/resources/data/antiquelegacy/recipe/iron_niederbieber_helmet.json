@@ -7,13 +7,13 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:iron_plate"
+      "tag": "c:plates/iron"
     },
     "b": {
-      "item": "antiquelegacy:bronze_nugget"
+      "tag": "c:nuggets/bronze"
     },
     "c": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }
   },
   "result": {

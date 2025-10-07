@@ -10,7 +10,7 @@
       "item": "minecraft:leather"
     },
     "b": {
-      "item": "antiquelegacy:bronze_plate"
+      "tag": "c:plates/bronze"
     },
     "c": {
       "item": "antiquelegacy:iron_chainmail"

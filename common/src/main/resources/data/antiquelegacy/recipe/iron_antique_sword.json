@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     },
     "b": {
-      "item": "antiquelegacy:bronze_nugget"
+      "tag": "c:nuggets/bronze"
     },
     "c": {
       "tag": "magistuarmory:hilts"

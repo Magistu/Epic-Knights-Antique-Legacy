@@ -4,7 +4,7 @@
         "item": "antiquelegacy:gallea"
     },
     "addition": {
-        "item": "minecraft:gold_ingot"
+        "tag": "c:ingots/gold"
     },
     "result": {
         "id": "antiquelegacy:gilded_gallea",

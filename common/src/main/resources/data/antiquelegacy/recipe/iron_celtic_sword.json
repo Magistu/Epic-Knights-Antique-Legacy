@@ -7,13 +7,13 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     },
     "b": {
       "tag": "magistuarmory:hilts"
     },
     "c": {
-      "item": "antiquelegacy:bronze_ingot"
+      "tag": "c:ingots/bronze"
     }
   },
   "result": {

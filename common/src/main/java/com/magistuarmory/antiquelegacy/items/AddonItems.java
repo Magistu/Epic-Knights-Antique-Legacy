@@ -8,8 +8,6 @@ import com.magistuarmory.item.*;
 import com.magistuarmory.item.armor.DyeableWearableArmorDecorationItem;
 import com.magistuarmory.item.armor.MedievalArmorItem;
 import com.magistuarmory.item.armor.WearableArmorDecorationItem;
-import dev.architectury.injectables.annotations.ExpectPlatform;
-import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.minecraft.resources.ResourceLocation;

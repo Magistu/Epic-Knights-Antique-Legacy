@@ -1,5 +1,8 @@
+import groovy.json.JsonOutput
+
 plugins {
     id "com.github.johnrengelman.shadow" version "7.0.0"
+    id "com.hypherionmc.modutils.modpublisher" version "2.1.8"
 }
 
 base {
@@ -21,6 +24,11 @@ configurations {
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
     developmentFabric.extendsFrom common
+
+    shadowBundle {
+        canBeResolved = true
+        canBeConsumed = false
+    }
 }
 
 repositories {
@@ -31,7 +39,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
     // Remove the next line if you don't want to depend on the API
-    modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
+    modApi "dev.architectury:architectury-fabric:${rootProject.architectury_api_version}"
 
     modImplementation "maven.modrinth:epic-knights-shields-armor-and-weapons:${rootProject.epic_knights_version}-fabric"
 
@@ -43,14 +51,40 @@ dependencies {
 }
 
 processResources {
-    inputs.property "version", project.version
-    inputs.property "mc_version", project.minecraft_version
-    inputs.property "loader_version", project.fabric_loader_version
+    def rawAuthors      = (project.findProperty("mod_authors") ?: "").toString()
+    def rawContributors = (project.findProperty("mod_contributors") ?: "").toString()
 
-    filesMatching("fabric.mod.json") {
-        expand "version": project.version,
-                "mc_version": project.minecraft_version,
-                "loader_version": project.fabric_loader_version
+    def authorsList      = rawAuthors.split(",")*.trim().findAll { it }
+    def contributorsList = rawContributors.split(",")*.trim().findAll { it }
+
+    def authorsArray      = JsonOutput.toJson(authorsList)
+    def contributorsArray = JsonOutput.toJson(contributorsList)
+
+    def expandProps = [
+            "mod_id"                    : (project.findProperty("mod_id") ?: "").toString(),
+            "mod_name"                  : (project.findProperty("mod_display_name") ?: "").toString(),
+            "mod_version"               : (project.findProperty("mod_version") ?: "").toString(),
+            "mod_description"           : (project.findProperty("mod_description") ?: "").toString(),
+            "mod_authors"               : authorsArray,
+            "mod_contributors"          : contributorsArray,
+            "mod_license"               : (project.findProperty("mod_license") ?: "").toString(),
+            "mod_discord_url"           : (project.findProperty("mod_discord_url") ?: "").toString(),
+            "mod_git_url"               : (project.findProperty("mod_git_url") ?: "").toString(),
+            "mod_issues_url"            : (project.findProperty("mod_issues_url") ?: "").toString(),
+            "mod_page_url"              : (project.findProperty("mod_page_url") ?: "").toString(),
+            "minecraft_min_version"     : (project.findProperty("minecraft_min_version") ?: "").toString(),
+            "minecraft_max_version"     : (project.findProperty("minecraft_max_version") ?: "").toString(),
+            "fabric_loader_version"     : (project.findProperty("fabric_loader_version") ?: "").toString(),
+            "min_fabric_loader_version" : (project.findProperty("min_fabric_loader_version") ?: "").toString(),
+            "architectury_api_version"  : (project.findProperty("architectury_api_version") ?: "").toString(),
+            "cloth_config_version"      : (project.findProperty("cloth_config_version") ?: "").toString(),
+            "epic_knights_version"      : (project.findProperty("epic_knights_version") ?: "").toString(),
+    ]
+
+    inputs.properties(expandProps)
+
+    filesMatching('fabric.mod.json') {
+        expand(expandProps)
     }
 
     // Normalize recipe JSONs to Minecraft 1.21.1 schema
@@ -106,30 +140,59 @@ processResources {
 }
 
 shadowJar {
-    exclude "architectury.common.json"
-
-    configurations = [project.configurations.shadowCommon]
-    archiveClassifier.set("dev-shadow")
+    configurations = [project.configurations.shadowBundle]
+    archiveClassifier.set 'dev-shadow'
 }
 
 remapJar {
     inputFile.set shadowJar.archiveFile
     dependsOn shadowJar
+
     archiveClassifier.set(null)
 }
 
-jar {
-    archiveClassifier.set("dev")
+def display_minecraft_version = rootProject.findProperty("display_minecraft_version")
+def mod_version = rootProject.findProperty("mod_version")
+
+tasks.named("remapJar") { t ->
+    t.archiveFileName.set("[${display_minecraft_version}-fabric]-Epic-Knights-Addon-${mod_version}.jar")
 }
 
-sourcesJar {
-    def commonSources = project(":common").sourcesJar
-    dependsOn commonSources
-    from commonSources.archiveFile.map { zipTree(it) }
-}
+publisher {
+    def mcVersionsFabric = (rootProject.ext.minecraftGameVersions as List).collect { it.toString() } as String[]
+    def changelogFile = rootProject.file("fabric/CHANGELOG.md")
+    def changelogText = changelogFile.exists() ? changelogFile.getText("UTF-8") : ""
 
-components.java {
-    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
-        skip()
+    apiKeys {
+        modrinth System.getenv("MODRINTH_TOKEN")
+        curseforge System.getenv("CURSEFORGE_TOKEN")
+    }
+
+    setCurseID((rootProject.findProperty("mod_curseforge_id") ?: "").toString())
+
+    setModrinthID((rootProject.findProperty("mod_modrinth_id") ?: "").toString())
+
+    setVersionType((rootProject.findProperty("release_channel") ?: "release").toString())
+
+    setChangelog(changelogText)
+
+    setProjectVersion(rootProject.mod_version)
+
+    setDisplayName("[${rootProject.minecraft_min_version}-fabric] ${rootProject.mod_display_name} ${rootProject.mod_version}")
+
+    setGameVersions(*mcVersionsFabric)
+
+    setLoaders("fabric")
+
+    setCurseEnvironment("both")
+
+    setArtifact(tasks.remapJar)
+
+    modrinthDepends {
+        required("epic-knights-shields-armor-and-weapons")
+    }
+
+    curseDepends {
+        required("epic-knights-armor-and-weapons")
     }
 }

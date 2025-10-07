@@ -1,0 +1,25 @@
+﻿{
+  "replace": false,
+  "values": [
+    "antiquelegacy:iron_antique_dagger",
+    "antiquelegacy:iron_sica",
+    "antiquelegacy:eagle_standard",
+    "antiquelegacy:weathered_eagle_standard",
+    "antiquelegacy:iron_antique_spear",
+    "antiquelegacy:iron_doru",
+    "antiquelegacy:iron_retiarius",
+    "antiquelegacy:iron_sarissa",
+    "antiquelegacy:iron_triarii_spear",
+    "antiquelegacy:iron_antique_sword",
+    "antiquelegacy:iron_celtic_sword",
+    "antiquelegacy:iron_early_spatha",
+    "antiquelegacy:iron_gladiator_sword",
+    "antiquelegacy:iron_gladius",
+    "antiquelegacy:iron_kopis",
+    "antiquelegacy:iron_republic_gladius",
+    "antiquelegacy:iron_rhomphaia",
+    "antiquelegacy:iron_single_edged_sword",
+    "antiquelegacy:iron_spatha",
+    "antiquelegacy:iron_xiphos"
+  ]
+}
