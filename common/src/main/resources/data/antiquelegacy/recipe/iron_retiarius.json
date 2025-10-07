@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_nugget"
+      "tag": "c:nuggets/iron"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     },
     "c": {
       "tag": "magistuarmory:poles"

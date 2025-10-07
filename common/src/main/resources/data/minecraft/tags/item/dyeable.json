@@ -1,0 +1,32 @@
+﻿{
+  "replace": false,
+  "values": [
+    "antiquelegacy:heddernheim_helmet",
+    "antiquelegacy:officer_squamata",
+    "antiquelegacy:linothorax",
+    "antiquelegacy:iron_thorax",
+    "antiquelegacy:phrygian_cap",
+    "antiquelegacy:short_phrygian_cap",
+    "antiquelegacy:celtic_tunic",
+    "antiquelegacy:celtic_tunic_boots",
+    "antiquelegacy:celtic_pants",
+    "antiquelegacy:red_celtic_pants",
+    "antiquelegacy:green_celtic_pants",
+    "antiquelegacy:brown_celtic_pants",
+    "antiquelegacy:black_celtic_pants",
+    "antiquelegacy:antique_cloak_decoration",
+    "antiquelegacy:greek_crest_decoration",
+    "antiquelegacy:greek_high_crest_decoration",
+    "antiquelegacy:hair_plume_decoration",
+    "antiquelegacy:roman_crest_decoration",
+    "antiquelegacy:roman_crest_alt_decoration",
+    "antiquelegacy:roman_feathers_decoration",
+    "antiquelegacy:roman_two_feathers_decoration",
+    "antiquelegacy:triple_feather_decoration",
+    "antiquelegacy:two_hair_plumes_decoration",
+    "antiquelegacy:chiton_decoration",
+    "antiquelegacy:subarmalis_decoration",
+    "antiquelegacy:celtic_tunic_underarmor_decoration",
+    "antiquelegacy:fur_cloak_decoration"
+  ]
+}

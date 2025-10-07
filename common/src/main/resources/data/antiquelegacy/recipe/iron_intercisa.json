@@ -7,13 +7,13 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_nugget"
+      "tag": "c:nuggets/iron"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     },
     "c": {
-      "item": "antiquelegacy:iron_plate"
+      "tag": "c:plates/iron"
     },
     "d": {
       "tag": "magistuarmory:leather_strips"

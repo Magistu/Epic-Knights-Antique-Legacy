@@ -50,7 +50,8 @@ public class AddonCreativeTabs
 			append(INGRIDIENTS_RESOURCE_KEY, item);
 		
 		append(NATURAL_BLOCKS_RESOURCE_KEY, AddonItems.TIN_ORE);
-		append(NATURAL_BLOCKS_RESOURCE_KEY, AddonItems.DEEPSLATE_TIN_ORE);	}
+		append(NATURAL_BLOCKS_RESOURCE_KEY, AddonItems.DEEPSLATE_TIN_ORE);
+	}
 
 	@SafeVarargs
 	public static <I extends ItemLike, T extends Supplier<I>> void append(ResourceKey<CreativeModeTab> tab, T... items)

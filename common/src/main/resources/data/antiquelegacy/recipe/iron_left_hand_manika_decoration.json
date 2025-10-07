@@ -7,7 +7,7 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:iron_plate"
+      "tag": "c:plates/iron"
     },
     "b": {
       "tag": "magistuarmory:leather_strips"

@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:bronze_plate"
+      "tag": "c:plates/bronze"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }
   },
   "result": {

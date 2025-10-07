@@ -7,7 +7,7 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:bronze_plate"
+      "tag": "c:plates/bronze"
     },
     "b": {
       "item": "minecraft:leather"
@@ -16,7 +16,7 @@
       "item": "antiquelegacy:bronze_lamellar_rows"
     },
     "d": {
-      "item": "antiquelegacy:copper_nugget"
+      "tag": "c:nuggets/copper"
     }
   },
   "result": {

@@ -7,16 +7,16 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:bronze_plate"
+      "tag": "c:plates/bronze"
     },
     "b": {
-      "item": "antiquelegacy:bronze_nugget"
+      "tag": "c:nuggets/bronze"
     },
     "c": {
       "tag": "magistuarmory:leather_strips"
     },
     "d": {
-      "item": "antiquelegacy:bronze_ingot"
+      "tag": "c:ingots/bronze"
     }
   },
   "result": {

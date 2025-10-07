@@ -174,7 +174,7 @@ public class WeaponsConfig implements ConfigData
 
         public DoruConfig() {
             this.enabled = true;
-            this.baseAttackDamage = 3.28f;
+            this.baseAttackDamage = 2.28f;
             this.baseAttackSpeed = 1.20f;
             this.bonusAttackReach = 2.00f;
         }
@@ -210,8 +210,8 @@ public class WeaponsConfig implements ConfigData
 
         public SarissaConfig() {
             this.enabled = true;
-            this.baseAttackDamage = 2.80f;
-            this.baseAttackSpeed = 0.80f;
+            this.baseAttackDamage = 0.0f;
+            this.baseAttackSpeed = 1.10f;
             this.bonusAttackReach = 4.00f;
         }
     }
@@ -228,7 +228,7 @@ public class WeaponsConfig implements ConfigData
 
         public TriariiSpearConfig() {
             this.enabled = true;
-            this.baseAttackDamage = 3.10f;
+            this.baseAttackDamage = 2.10f;
             this.baseAttackSpeed = 1.25f;
             this.bonusAttackReach = 1.90f;
         }

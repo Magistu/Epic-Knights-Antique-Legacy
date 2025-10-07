@@ -10,7 +10,7 @@
       "tag": "magistuarmory:woolen_fabrics"
     },
     "b": {
-      "item": "antiquelegacy:bronze_nugget"
+      "tag": "c:nuggets/bronze"
     }
   },
   "result": {

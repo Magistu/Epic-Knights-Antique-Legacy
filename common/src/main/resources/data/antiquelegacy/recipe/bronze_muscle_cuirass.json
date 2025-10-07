@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:bronze_ingot"
+      "tag": "c:ingots/bronze"
     },
     "b": {
-      "item": "antiquelegacy:bronze_plate"
+      "tag": "c:plates/bronze"
     }
   },
   "result": {

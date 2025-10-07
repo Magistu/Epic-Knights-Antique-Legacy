@@ -7,16 +7,16 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_nugget"
+      "tag": "c:nuggets/iron"
     },
     "b": {
-      "item": "antiquelegacy:bronze_plate"
+      "tag": "c:plates/bronze"
     },
     "c": {
       "tag": "magistuarmory:poles"
     },
     "d": {
-      "item": "antiquelegacy:bronze_ingot"
+      "tag": "c:ingots/bronze"
     }
   },
   "result": {

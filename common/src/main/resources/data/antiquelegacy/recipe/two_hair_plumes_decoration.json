@@ -7,7 +7,7 @@
   ],
   "key": {
     "a": {
-      "item": "antiquelegacy:bronze_nugget"
+      "tag": "c:nuggets/bronze"
     },
     "b": {
       "item": "minecraft:string"
