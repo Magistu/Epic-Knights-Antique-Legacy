@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " aa",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "tag": "magistuarmory:hilts"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:iron_single_edged_sword",
+    "count": 1
+  }
+}
+

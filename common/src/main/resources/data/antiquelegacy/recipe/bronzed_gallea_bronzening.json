@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "antiquelegacy:gallea"
+    },
+    "addition": {
+        "item": "antiquelegacy:bronze_ingot"
+    },
+    "result": {
+        "id": "antiquelegacy:bronzed_gallea",
+        "count": 1
+    },
+    "template": {
+        "item": "magistuarmory:gilding_template"
+    }
+}
+
+

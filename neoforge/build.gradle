@@ -1,0 +1,116 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "7.0.0"
+}
+
+base {
+    archivesName = "Neoforge-1.21.1-Epic-Knights-Antique-Legacy"
+}
+
+architectury {
+    platformSetupLoomIde()
+    neoForge()
+}
+
+version = rootProject.mod_version
+
+// No access widener for NeoForge
+
+configurations {
+    common
+    shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentNeoForge.extendsFrom common
+}
+
+repositories {
+    mavenLocal()
+    maven { url = "https://api.modrinth.com/maven" }
+    maven { url = "https://maven.neoforged.net/releases" }
+}
+
+// Do not include legacy Forge metadata in resources at all
+sourceSets {
+    main {
+        resources {
+            exclude "META-INF/mods.toml"
+        }
+    }
+}
+
+dependencies {
+    neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
+    modApi "dev.architectury:architectury-neoforge:${rootProject.architectury_version}"
+
+    modImplementation "io.github.magistu:1.21.1-epic-knights-common:9.26"
+
+    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("META-INF/neoforge.mods.toml") {
+        expand "version": project.version
+    }
+
+    // Ensure old Forge metadata is never included
+    exclude("META-INF/mods.toml")
+        // After resources are processed, normalize recipe JSONs to Minecraft 1.21.1 schema
+        // Convert result strings to objects and rename "item" to "id" within result objects
+        doLast {
+            def fixText = { String s ->
+                // 1) "result": "namespace:item" -> "result": { "id": "namespace:item" }
+                def t = s.replaceAll(/"result"\s*:\s*"([^"]+)"/, '"result": { "id": "$1" }')
+                // 2) within result object, rename item -> id
+                t = t.replaceAll(/("result"\s*:\s*\{[^}]*?)"item"/, '$1"id"')
+                return t
+            }
+            outputs.files.each { out ->
+                fileTree(out).matching { include '**/recipes/**/*.json' }.each { File f ->
+                    try {
+                        def orig = f.getText('UTF-8')
+                        def mod = fixText(orig)
+                        if (mod != orig) {
+                            f.write(mod, 'UTF-8')
+                        }
+                    } catch (Exception e) {
+                        logger.warn("Failed to normalize recipe JSON: ${f}", e)
+                    }
+                }
+            }
+        }
+}
+
+shadowJar {
+    exclude "fabric.mod.json"
+    exclude "architectury.common.json"
+    exclude "META-INF/mods.toml"
+
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier.set("dev-shadow")
+}
+
+remapJar {
+    inputFile.set shadowJar.archiveFile
+    dependsOn shadowJar
+    archiveClassifier.set(null)
+}
+
+jar {
+    archiveClassifier.set("dev")
+    exclude "META-INF/mods.toml"
+}
+
+sourcesJar {
+    def commonSources = project(":common").sourcesJar
+    dependsOn commonSources
+    from commonSources.archiveFile.map { zipTree(it) }
+}
+
+components.java {
+    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
+        skip()
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "a a",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "antiquelegacy:iron_plate"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:iron_pilos",
+    "count": 1
+  }
+}
+

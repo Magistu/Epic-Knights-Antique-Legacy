@@ -1,11 +1,10 @@
 package com.magistuarmory.antiquelegacy.util;
 
 import com.magistuarmory.EpicKnights;
-import com.magistuarmory.antiquelegacy.item.AddonItems;
+import com.magistuarmory.antiquelegacy.items.AddonItems;
+
 import net.minecraft.ChatFormatting;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
-import net.minecraft.nbt.StringTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.RandomSource;
@@ -29,43 +28,9 @@ public class AddonEquipments
     
     public static ItemStack getWeatheredEagleStandardItem() {
         ItemStack aquila = new ItemStack(AddonItems.WEATHERED_EAGLE_STANDARD.get());
-        ListTag listtag = getLoreTag(aquila);
-        listtag.add(StringTag.valueOf(Component.Serializer.toJson(Component.translatable("lore.antiquelegacy.varus_give_me_back_my_legions").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_PURPLE))));
         return aquila;
     }
 
-    static ListTag getLoreTag(ItemStack itemStack) {
-        CompoundTag compoundTag2;
-        CompoundTag compoundTag;
-        
-        if (itemStack.hasTag()) 
-        {
-            compoundTag = itemStack.getTag();
-        } 
-        else
-        {
-            compoundTag = new CompoundTag();
-            itemStack.setTag(compoundTag);
-        }
-        
-        if (compoundTag.contains("display", 10))
-        {
-            compoundTag2 = compoundTag.getCompound("display");
-        } 
-        else
-        {
-            compoundTag2 = new CompoundTag();
-            compoundTag.put("display", compoundTag2);
-        }
-        
-        if (compoundTag2.contains("Lore", 9))
-            return compoundTag2.getList("Lore", 8);
-        
-        ListTag listTag = new ListTag();
-        compoundTag2.put("Lore", listTag);
-        
-        return listTag;
-    }
     
     public static void equip(LivingEntity livingentity)
     {

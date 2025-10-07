@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "cac",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "antiquelegacy:iron_plate"
+    },
+    "b": {
+      "item": "antiquelegacy:bronze_ingot"
+    },
+    "c": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "antiquelegacy:bronze_imperial_scutum",
+    "count": 1
+  }
+}
+
