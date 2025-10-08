@@ -1,7 +1,7 @@
 package com.magistuarmory.antiquelegacy.misc;
 
 import com.magistuarmory.EpicKnights;
-import com.magistuarmory.antiquelegacy.items.AddonItems;
+import com.magistuarmory.antiquelegacy.item.AddonItems;
 import com.magistuarmory.antiquelegacy.util.AddonEquipments;
 import com.magistuarmory.item.ArmorDecoration;
 import com.magistuarmory.item.MedievalShieldItem;

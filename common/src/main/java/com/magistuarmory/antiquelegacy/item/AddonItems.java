@@ -1,8 +1,8 @@
-package com.magistuarmory.antiquelegacy.items;
+package com.magistuarmory.antiquelegacy.item;
 
 import com.magistuarmory.antiquelegacy.EpicKnightsAntiqueLegacy;
 import com.magistuarmory.antiquelegacy.blocks.ModBlocks;
-import com.magistuarmory.antiquelegacy.items.armor.AddonArmorTypes;
+import com.magistuarmory.antiquelegacy.item.armor.AddonArmorTypes;
 import com.magistuarmory.api.item.ModItemsProvider;
 import com.magistuarmory.item.*;
 import com.magistuarmory.item.armor.DyeableWearableArmorDecorationItem;
@@ -14,8 +14,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-
-import java.util.function.Supplier;
 
 public class AddonItems extends ModItemsProvider
 {

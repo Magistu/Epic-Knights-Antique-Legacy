@@ -1,4 +1,4 @@
-package com.magistuarmory.antiquelegacy.items;
+package com.magistuarmory.antiquelegacy.item;
 
 import com.magistuarmory.antiquelegacy.EpicKnightsAntiqueLegacy;
 import com.magistuarmory.antiquelegacy.config.ShieldsConfig;

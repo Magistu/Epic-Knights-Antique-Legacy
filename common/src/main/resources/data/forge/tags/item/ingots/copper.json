@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:copper_ingot",
-    "antiquelegacy:copper_ingot",
-    "#c:copper_ingots"
-  ]
-}

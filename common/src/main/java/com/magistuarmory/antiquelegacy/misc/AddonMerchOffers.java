@@ -1,7 +1,6 @@
 package com.magistuarmory.antiquelegacy.misc;
 
-import com.magistuarmory.antiquelegacy.items.AddonItems;
-import com.magistuarmory.item.ModItems;
+import com.magistuarmory.antiquelegacy.item.AddonItems;
 import dev.architectury.event.events.common.LifecycleEvent;
 import dev.architectury.registry.level.entity.trade.SimpleTrade;
 import dev.architectury.registry.level.entity.trade.TradeRegistry;

@@ -2,7 +2,7 @@
     "type": "minecraft:blasting",
     "ingredient": [
         {
-            "item": "antiquelegacy:golden_laurel_wreath"
+            "item": "antiquelegacy:golden_laurel_wreath_decoration"
         }
     ],
     "result": { "id": "minecraft:gold_nugget" },

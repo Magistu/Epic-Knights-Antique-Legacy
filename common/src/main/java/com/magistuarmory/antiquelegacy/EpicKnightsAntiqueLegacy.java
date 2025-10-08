@@ -4,7 +4,7 @@ import com.magistuarmory.antiquelegacy.blocks.ModBlocks;
 import com.magistuarmory.antiquelegacy.client.render.model.AddonModels;
 import com.magistuarmory.antiquelegacy.config.AddonConfig;
 import com.magistuarmory.antiquelegacy.event.CommonEvents;
-import com.magistuarmory.antiquelegacy.items.AddonItems;
+import com.magistuarmory.antiquelegacy.item.AddonItems;
 import com.magistuarmory.antiquelegacy.misc.AddonCreativeTabs;
 import com.magistuarmory.antiquelegacy.misc.AddonMerchOffers;
 import dev.architectury.platform.Platform;

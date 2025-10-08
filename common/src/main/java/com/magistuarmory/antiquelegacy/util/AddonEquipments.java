@@ -1,11 +1,8 @@
 package com.magistuarmory.antiquelegacy.util;
 
 import com.magistuarmory.EpicKnights;
-import com.magistuarmory.antiquelegacy.items.AddonItems;
+import com.magistuarmory.antiquelegacy.item.AddonItems;
 
-import net.minecraft.ChatFormatting;
-import net.minecraft.nbt.ListTag;
-import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EquipmentSlot;
