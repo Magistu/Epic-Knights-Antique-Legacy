@@ -1,0 +1,28 @@
+{
+  "collider": {
+    "number": 2,
+    "size": [
+      0.4,
+      0.4,
+      0.8
+    ],
+    "center": [
+      0.0,
+      0.0,
+      -0.4
+    ]
+  },
+  "attributes": {
+    "common": {
+      "impact": 3.0,
+      "max_strikes": 1
+    },
+    "one_hand": {
+      "speed_bonus": 0.52
+    },
+    "two_hand": {
+      "speed_bonus": -0.44
+    }
+  },
+  "type": "epicfight:dagger"
+}

@@ -4,12 +4,12 @@ import com.magistuarmory.antiquelegacy.EpicKnightsAntiqueLegacy;
 import com.magistuarmory.antiquelegacy.block.ModBlocks;
 import com.magistuarmory.antiquelegacy.item.armor.AddonArmorTypes;
 import com.magistuarmory.api.item.ModItemsProvider;
+import com.magistuarmory.antiquelegacy.config.ShieldsConfig;
+import com.magistuarmory.antiquelegacy.config.WeaponsConfig;
 import com.magistuarmory.item.*;
 import com.magistuarmory.item.armor.DyeableWearableArmorDecorationItem;
 import com.magistuarmory.item.armor.MedievalArmorItem;
 import com.magistuarmory.item.armor.WearableArmorDecorationItem;
-import dev.architectury.injectables.annotations.ExpectPlatform;
-import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.minecraft.resources.ResourceLocation;
@@ -23,27 +23,30 @@ public class AddonItems extends ModItemsProvider
 {
 	public static AddonItems INSTANCE = new AddonItems();
 
+	public static final WeaponsConfig WEAPONS_CONFIG = EpicKnightsAntiqueLegacy.CONFIG.weapons;
+	public static final ShieldsConfig SHIELDS_CONFIG = EpicKnightsAntiqueLegacy.CONFIG.shields;
+
 	//Weapons
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_ANTIQUE_DAGGER = INSTANCE.addMedievalWeaponItem("iron_antique_dagger", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.ANTIQUE_DAGGER);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SICA = INSTANCE.addMedievalWeaponItem("iron_sica", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.SICA);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> EAGLE_STANDARD = INSTANCE.addMedievalWeaponItem("eagle_standard", new Item.Properties(), ModItemTier.BRONZE, AddonWeaponTypes.EAGLE_STANDARD);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> WEATHERED_EAGLE_STANDARD = INSTANCE.addMedievalWeaponItem("weathered_eagle_standard", new Item.Properties(), ModItemTier.BRONZE, AddonWeaponTypes.WEATHERED_EAGLE_STANDARD);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_ANTIQUE_SPEAR = INSTANCE.addMedievalWeaponItem("iron_antique_spear", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.ANTIQUE_SPEAR);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_DORU = INSTANCE.addMedievalWeaponItem("iron_doru", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.DORU);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_RETIARIUS = INSTANCE.addMedievalWeaponItem("iron_retiarius", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.RETIARIUS);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SARISSA = INSTANCE.addMedievalWeaponItem("iron_sarissa", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.SARISSA);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_TRIARII_SPEAR = INSTANCE.addMedievalWeaponItem("iron_triarii_spear", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.TRIARII_SPEAR);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_ANTIQUE_SWORD = INSTANCE.addMedievalWeaponItem("iron_antique_sword", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.ANTIQUE_SWORD);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_CELTIC_SWORD = INSTANCE.addMedievalWeaponItem("iron_celtic_sword", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.CELTIC_SWORD);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_EARLY_SPATHA = INSTANCE.addMedievalWeaponItem("iron_early_spatha", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.EARLY_SPATHA);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_GLADIATOR_SWORD = INSTANCE.addMedievalWeaponItem("iron_gladiator_sword", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.GLADIATOR_SWORD);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_GLADIUS = INSTANCE.addMedievalWeaponItem("iron_gladius", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.GLADIUS);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_KOPIS = INSTANCE.addMedievalWeaponItem("iron_kopis", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.KOPIS);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_REPUBLIC_GLADIUS = INSTANCE.addMedievalWeaponItem("iron_republic_gladius", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.REPUBLIC_GLADIUS);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_RHOMPHAIA = INSTANCE.addMedievalWeaponItem("iron_rhomphaia", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.RHOMPHAIA);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SINGLE_EDGED_SWORD = INSTANCE.addMedievalWeaponItem("iron_single_edged_sword", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.SINGLE_EDGED_SWORD);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SPATHA = INSTANCE.addMedievalWeaponItem("iron_spatha", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.SPATHA);
-	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_XIPHOS = INSTANCE.addMedievalWeaponItem("iron_xiphos", new Item.Properties(), ModItemTier.IRON, AddonWeaponTypes.XIPHOS);
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_ANTIQUE_DAGGER = INSTANCE.addMedievalWeaponItem("iron_antique_dagger", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("antiqueDagger"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SICA = INSTANCE.addMedievalWeaponItem("iron_sica", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("sica"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> EAGLE_STANDARD = INSTANCE.addMedievalWeaponItem("eagle_standard", new Item.Properties(), ModItemTier.BRONZE, WEAPONS_CONFIG.getMelee("eagleStandard"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> WEATHERED_EAGLE_STANDARD = INSTANCE.addMedievalWeaponItem("weathered_eagle_standard", new Item.Properties(), ModItemTier.BRONZE, WEAPONS_CONFIG.getMelee("weatheredEagleStandard"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_ANTIQUE_SPEAR = INSTANCE.addMedievalWeaponItem("iron_antique_spear", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("antiqueSpear"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_DORU = INSTANCE.addMedievalWeaponItem("iron_doru", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("doru"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_RETIARIUS = INSTANCE.addMedievalWeaponItem("iron_retiarius", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("retiarius"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SARISSA = INSTANCE.addMedievalWeaponItem("iron_sarissa", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("sarissa"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_TRIARII_SPEAR = INSTANCE.addMedievalWeaponItem("iron_triarii_spear", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("triariiSpear"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_ANTIQUE_SWORD = INSTANCE.addMedievalWeaponItem("iron_antique_sword", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("antiqueSword"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_CELTIC_SWORD = INSTANCE.addMedievalWeaponItem("iron_celtic_sword", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("celticSword"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_EARLY_SPATHA = INSTANCE.addMedievalWeaponItem("iron_early_spatha", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("earlySpatha"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_GLADIATOR_SWORD = INSTANCE.addMedievalWeaponItem("iron_gladiator_sword", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("gladiatorSword"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_GLADIUS = INSTANCE.addMedievalWeaponItem("iron_gladius", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("gladius"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_KOPIS = INSTANCE.addMedievalWeaponItem("iron_kopis", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("kopis"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_REPUBLIC_GLADIUS = INSTANCE.addMedievalWeaponItem("iron_republic_gladius", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("republicGladius"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_RHOMPHAIA = INSTANCE.addMedievalWeaponItem("iron_rhomphaia", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("rhomphaia"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SINGLE_EDGED_SWORD = INSTANCE.addMedievalWeaponItem("iron_single_edged_sword", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("singleEdgedSword"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_SPATHA = INSTANCE.addMedievalWeaponItem("iron_spatha", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("spatha"));
+	public static final @Nullable RegistrySupplier<MedievalWeaponItem> IRON_XIPHOS = INSTANCE.addMedievalWeaponItem("iron_xiphos", new Item.Properties(), ModItemTier.IRON, WEAPONS_CONFIG.getMelee("xiphos"));
 
 
 	//Armor
@@ -241,11 +244,11 @@ public class AddonItems extends ModItemsProvider
 
 
 	//Shield
-	public static final RegistrySupplier<MedievalShieldItem> REPUBLIC_SCUTUM = INSTANCE.addMedievalShieldItem("bronze_republic_scutum", "republic_scutum", new Item.Properties(), ModItemTier.BRONZE, true, true, AddonShieldTypes.REPUBLIC_SCUTUM);
-	public static final RegistrySupplier<MedievalShieldItem> IMPERIAL_SCUTUM = INSTANCE.addMedievalShieldItem("bronze_imperial_scutum", "imperial_scutum", new Item.Properties(), ModItemTier.BRONZE, true, true, AddonShieldTypes.IMPERIAL_SCUTUM);
-	public static final RegistrySupplier<MedievalShieldItem> TUREOS = INSTANCE.addMedievalShieldItem("bronze_tureos", "tureos", new Item.Properties(), ModItemTier.BRONZE, true, true, AddonShieldTypes.TUREOS);
-	public static final RegistrySupplier<MedievalShieldItem> HOPLON = INSTANCE.addMedievalShieldItem("bronze_hoplon", "hoplon", new Item.Properties(), ModItemTier.BRONZE, true, true, AddonShieldTypes.HOPLON);
-	public static final RegistrySupplier<MedievalShieldItem> PELTA = INSTANCE.addMedievalShieldItem("pelta", "pelta", new Item.Properties(), ModItemTier.BRONZE, true, true, AddonShieldTypes.PELTA);
+	public static final RegistrySupplier<MedievalShieldItem> REPUBLIC_SCUTUM = INSTANCE.addMedievalShieldItem("bronze_republic_scutum", "republic_scutum", new Item.Properties(), ModItemTier.BRONZE, true, true, SHIELDS_CONFIG.get("republicScutum"));
+	public static final RegistrySupplier<MedievalShieldItem> IMPERIAL_SCUTUM = INSTANCE.addMedievalShieldItem("bronze_imperial_scutum", "imperial_scutum", new Item.Properties(), ModItemTier.BRONZE, true, true, SHIELDS_CONFIG.get("imperialScutum"));
+	public static final RegistrySupplier<MedievalShieldItem> TUREOS = INSTANCE.addMedievalShieldItem("bronze_tureos", "tureos", new Item.Properties(), ModItemTier.BRONZE, true, true, SHIELDS_CONFIG.get("tureos"));
+	public static final RegistrySupplier<MedievalShieldItem> HOPLON = INSTANCE.addMedievalShieldItem("bronze_hoplon", "hoplon", new Item.Properties(), ModItemTier.BRONZE, true, true, SHIELDS_CONFIG.get("hoplon"));
+	public static final RegistrySupplier<MedievalShieldItem> PELTA = INSTANCE.addMedievalShieldItem("pelta", "pelta", new Item.Properties(), ModItemTier.BRONZE, true, true, SHIELDS_CONFIG.get("pelta"));
 	
 	public AddonItems()
 	{

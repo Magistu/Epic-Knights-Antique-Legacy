@@ -1,0 +1,28 @@
+{
+  "collider": {
+    "number": 3,
+    "size": [
+      0.5,
+      0.5,
+      1.0
+    ],
+    "center": [
+      0.0,
+      0.0,
+      -0.7
+    ]
+  },
+  "attributes": {
+    "common": {
+      "impact": 3.7,
+      "max_strikes": 1
+    },
+    "one_hand": {
+      "speed_bonus": 0.41
+    },
+    "two_hand": {
+      "speed_bonus": -0.49
+    }
+  },
+  "type": "epicfight:generic"
+}

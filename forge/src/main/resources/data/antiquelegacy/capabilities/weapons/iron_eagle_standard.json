@@ -1,0 +1,28 @@
+{
+  "collider": {
+    "number": 4,
+    "size": [
+      0.7,
+      0.7,
+      1.8
+    ],
+    "center": [
+      0.0,
+      0.0,
+      -1.1
+    ]
+  },
+  "attributes": {
+    "common": {
+      "impact": 2.0,
+      "max_strikes": 1
+    },
+    "one_hand": {
+      "speed_bonus": 0.22
+    },
+    "two_hand": {
+      "speed_bonus": -0.59
+    }
+  },
+  "type": "epicfight:polearm"
+}

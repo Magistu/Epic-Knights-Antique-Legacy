@@ -1,35 +1,35 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
-issueTrackerURL = "https://github.com/Magistu/Epic-Knights-Antique-Legacy/issues"
-displayURL="https://github.com/Magistu/Epic-Knights-Antique-Legacy"
-license = "MIT"
-[[mods]]
-modId = "antiquelegacy"
-version = "${version}"
-displayName = "Epic Knights: Antique Legacy"
-authors = ["minucius", "Magistu"]
-credits = ["Borki", "StaxiHD", "Plaguedoctor", "Superamogus", "Santusio"]
-description = '''
-Adds antique stuff to the game
-'''
+license = "${mod_license}"
+loaderVersion = "${forge_loader_version_range}"
+displayURL = "${mod_page_url}"
+issueTrackerURL = "${mod_issues_url}"
+logoFile = "icon.png"
 
-[[dependencies.antiquelegacy]]
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+credits = "${mod_contributors}"
+description = "${mod_description}"
+
+[[dependencies."${mod_id}"]]
 modId = "forge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "${forge_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.antiquelegacy]]
+[[dependencies."${mod_id}"]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.0,)"
+versionRange = "[${minecraft_min_version},${minecraft_max_version})"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.antiquelegacy]]
+[[dependencies."${mod_id}"]]
 modId = "magistuarmory"
 mandatory = true
-versionRange = "[8.6,)"
+versionRange = "[10.8,)"
 ordering = "AFTER"
 side = "BOTH"

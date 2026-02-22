@@ -1,0 +1,28 @@
+{
+  "collider": {
+    "number": 3,
+    "size": [
+      0.6,
+      0.6,
+      1.6
+    ],
+    "center": [
+      0.0,
+      0.0,
+      -1.0
+    ]
+  },
+  "attributes": {
+    "common": {
+      "impact": 4.0,
+      "max_strikes": 1
+    },
+    "one_hand": {
+      "speed_bonus": 0.47
+    },
+    "two_hand": {
+      "speed_bonus": -0.47
+    }
+  },
+  "type": "magistuarmory:pike"
+}

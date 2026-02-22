@@ -1,5 +1,6 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "7.0.0"
+    id "com.hypherionmc.modutils.modpublisher" version "2.1.7"
 }
 
 architectury {
@@ -8,12 +9,11 @@ architectury {
 }
 
 version = rootProject.mod_version
+archivesBaseName = "epic-knights-antique-legacy-${rootProject.display_minecraft_version}-forge"
 
 loom {
-    accessWidenerPath = project(":common").loom.accessWidenerPath
 
     forge {
-        convertAccessWideners.set(true)
     }
 }
 
@@ -25,34 +25,50 @@ configurations {
     developmentForge.extendsFrom common
 }
 
-repositories {
-    maven {
-        url = "https://api.modrinth.com/maven"
-    }
-}
-
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
+
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
-    
-    modApi "io.github.magistu:${rootProject.minecraft_version}-epic-knights-forge:${rootProject.epic_knights_version}"
+    modImplementation "me.shedaniel.cloth:cloth-config-forge:${rootProject.cloth_config_version}"
+    implementation "maven.modrinth:epic-knights-shields-armor-and-weapons:${rootProject.epic_knights_version}-forge"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
 
 processResources {
-    inputs.property "version", project.version
+    def authors      = project.mod_authors.toString().split(",")*.trim().findAll{it}.join(", ")
+    def contributors = project.mod_contributors.toString().split(",")*.trim().findAll{it}.join(", ")
 
-    filesMatching("META-INF/mods.toml") {
-        expand "version": project.version
+    def expandProps = [
+            "mod_id"                        : project.mod_id,
+            "mod_name"                      : project.mod_display_name,
+            "mod_version"                   : project.mod_version,
+            "mod_description"               : project.mod_description,
+            "mod_authors"                   : authors,
+            "mod_contributors"              : contributors,
+            "mod_license"                   : project.mod_license,
+            "mod_discord_url"               : project.mod_discord_url,
+            "mod_git_url"                   : project.mod_git_url,
+            "mod_issues_url"                : project.mod_issues_url,
+            "mod_page_url"                  : project.mod_page_url,
+            "minecraft_min_version"         : project.minecraft_min_version,
+            "minecraft_max_version"         : project.minecraft_max_version,
+            "forge_version_range"           : project.forge_version_range,
+            "forge_loader_version_range"    : project.forge_version_range,
+            "architectury_api_version"      : (project.findProperty("architectury_api_version") ?: "").toString(),
+            "cloth_config_version"          : (project.findProperty("cloth_config_version") ?: "").toString(),
+            "epic_knights_version"          : (project.findProperty("epic_knights_version") ?: "").toString(),
+    ]
+
+    inputs.properties(expandProps)
+
+    filesMatching('META-INF/mods.toml') {
+        expand(expandProps)
     }
 }
 
 shadowJar {
-    exclude "fabric.mod.json"
-    exclude "architectury.common.json"
-
     configurations = [project.configurations.shadowCommon]
     archiveClassifier.set("dev-shadow")
 }
@@ -76,5 +92,43 @@ sourcesJar {
 components.java {
     withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
         skip()
+    }
+}
+
+publisher {
+    def changelogFile = rootProject.file("forge/CHANGELOG.md")
+    def changelogText = changelogFile.exists() ? changelogFile.getText("UTF-8") : ""
+
+    apiKeys {
+        modrinth System.getenv("MODRINTH_TOKEN")
+        curseforge System.getenv("CURSEFORGE_TOKEN")
+    }
+
+    setCurseID((rootProject.findProperty("mod_curseforge_id") ?: "").toString())
+
+    setModrinthID((rootProject.findProperty("mod_modrinth_id") ?: "").toString())
+
+    setVersionType((rootProject.findProperty("release_channel") ?: "release").toString())
+
+    setChangelog(changelogText)
+
+    setVersion(rootProject.mod_version)
+
+    setDisplayName("[${rootProject.display_minecraft_version}-forge]-${rootProject.mod_display_name}-${rootProject.mod_version}")
+
+    setGameVersions("1.20.1")
+
+    setLoaders("forge")
+
+    setCurseEnvironment("both")
+
+    setArtifact(tasks.remapJar)
+
+    modrinthDepends {
+        required("epic-knights-shields-armor-and-weapons")
+    }
+
+    curseDepends {
+        required("epic-knights-armor-and-weapons")
     }
 }

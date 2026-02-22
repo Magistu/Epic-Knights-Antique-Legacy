@@ -9,8 +9,7 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
 
 @Config(name = "antiquelegacy")
-public class AddonConfig extends PartitioningSerializer.GlobalData
-{
+public class AddonConfig extends PartitioningSerializer.GlobalData {
     @ConfigEntry.Gui.CollapsibleObject
     public WeaponsConfig weapons;
     
